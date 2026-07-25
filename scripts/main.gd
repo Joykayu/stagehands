@@ -66,6 +66,8 @@ func next_transition(type):
 			$PuzzlePlaceholder.show()
 			$DialogSystem.is_active = false
 		"puzzle_out":
+			$DialogSystem.disable_audio_playback()
+			$DialogSystem.prepare_after_puzzle()
 			state = "dialogue"
 			$PuzzlePlaceholder.hide()
 
@@ -79,6 +81,7 @@ func spawn_transition():
 func on_transition_finished():
 	match state:
 		"dialogue":
+			$DialogSystem.enable_audio_playback()
 			$DialogSystem.is_active = true
 		"puzzle":
 			#puzzle is active

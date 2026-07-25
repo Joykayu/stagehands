@@ -118,3 +118,6 @@ theme = ExtResource("6_skqg8")
 bbcode_enabled = true
 text = "The dialogue line will appear here"
 metadata/_edit_use_anchors_ = true
+
+[node name="VoicePlayer" type="AudioStreamPlayer" parent="." unique_id=1987654321]
+unique_name_in_owner = true
