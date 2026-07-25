@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://cactkkqw0rhb8"]
+
+[ext_resource type="Script" uid="uid://duatqyi5t112h" path="res://scripts/dialog_system.gd" id="1_o7dfd"]
+[ext_resource type="Texture2D" uid="uid://dhcwybhoxgwhe" path="res://icon.svg" id="3_3urqn"]
+[ext_resource type="Texture2D" uid="uid://c7wl6mtr4pjjj" path="res://assets/graphics/Untitled-2.png" id="3_o7dfd"]
+[ext_resource type="Texture2D" uid="uid://dnqa7q0uwknct" path="res://assets/graphics/paper.jpg" id="4_s6jwc"]
+[ext_resource type="Texture2D" uid="uid://b2bj4jef17ojp" path="res://assets/graphics/dialog_box.png" id="5_skqg8"]
+[ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="6_skqg8"]
+
+[node name="DialogSystem" type="Node" unique_id=617765245]
+script = ExtResource("1_o7dfd")
+source = "res://assets/dialogues/dialogue1.json"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=258133303]
+clip_contents = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1194, 364)
+color = Color(0.9411765, 0.6431373, 0.16862746, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="ColorRect" unique_id=113732302]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+texture = ExtResource("3_o7dfd")
+
+[node name="DialogControl" type="Control" parent="." unique_id=1641057]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -400.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="CharaLeftSprite" type="Sprite2D" parent="DialogControl" unique_id=412072503]
+texture_filter = 1
+position = Vector2(222, 17)
+texture = ExtResource("3_3urqn")
+offset = Vector2(6, -229.595)
+
+[node name="CharaRightSprite" type="Sprite2D" parent="DialogControl" unique_id=1761276014]
+texture_filter = 1
+position = Vector2(1682.9366, 30.78302)
+scale = Vector2(-1, 1)
+texture = ExtResource("3_3urqn")
+offset = Vector2(-0.06335449, -243.37802)
+
+[node name="DialogBg" type="TextureRect" parent="DialogControl" unique_id=1954244522]
+self_modulate = Color(1, 1, 1, 0.53333336)
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -408.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_s6jwc")
+expand_mode = 3
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogBg3" type="TextureRect" parent="DialogControl/DialogBg" unique_id=706938116]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_skqg8")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogBg2" type="ColorRect" parent="DialogControl/DialogBg" unique_id=726788319]
+show_behind_parent = true
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.9098039, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CharaNameLabel" type="Label" parent="DialogControl" unique_id=2006823179]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 41.0
+offset_top = 22.0
+offset_right = 288.0
+offset_bottom = 82.0
+theme = ExtResource("6_skqg8")
+text = "Character"
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogLineLabel" type="RichTextLabel" parent="DialogControl" unique_id=1783542007]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 144.0
+offset_top = 117.0
+offset_right = 1685.0
+offset_bottom = 339.0
+theme = ExtResource("6_skqg8")
+bbcode_enabled = true
+text = "The dialogue line will appear here"
+metadata/_edit_use_anchors_ = true

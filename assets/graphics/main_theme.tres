@@ -1,0 +1,15 @@
+[gd_resource type="Theme" format=3 uid="uid://c5mexhp1eo04u"]
+
+[ext_resource type="FontFile" uid="uid://cxi8lv14q2ayv" path="res://assets/dialogues/Barthowheel Italic.ttf" id="1_u6jkp"]
+[ext_resource type="FontFile" uid="uid://bphyc5k6w6fdf" path="res://assets/dialogues/Barthowheel Regular.ttf" id="2_jquui"]
+
+[resource]
+default_font = ExtResource("2_jquui")
+default_font_size = 60
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 5
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/outline_size = 3
+RichTextLabel/fonts/italics_font = ExtResource("1_u6jkp")

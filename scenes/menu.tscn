@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://dvdor61hem3er"]
+
+[ext_resource type="Texture2D" uid="uid://dnqa7q0uwknct" path="res://assets/graphics/paper.jpg" id="1_con2f"]
+[ext_resource type="Texture2D" uid="uid://cicxygpdvwull" path="res://assets/graphics/sarah.png" id="1_g3eks"]
+[ext_resource type="Texture2D" uid="uid://dwlgnwqi5axdm" path="res://assets/graphics/annabelle.png" id="2_v86rl"]
+[ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="3_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://cdwug722va551" path="res://assets/graphics/fred.png" id="3_13sgg"]
+[ext_resource type="Texture2D" uid="uid://bp84ehi4i5o1y" path="res://assets/graphics/menu button.png" id="5_g3eks"]
+
+[node name="Menu" type="Control" unique_id=949658739]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1943001673]
+custom_minimum_size = Vector2(800, 1000)
+layout_mode = 0
+offset_left = 21.0
+offset_top = -245.0
+offset_right = 821.0
+offset_bottom = 755.0
+rotation = 0.24129161
+color = Color(0.24313726, 0.7411765, 0.40784314, 1)
+
+[node name="Sarah" type="Sprite2D" parent="ColorRect" unique_id=1000266164]
+position = Vector2(370.8409, 657.43066)
+rotation = -0.24129163
+scale = Vector2(0.7344962, 0.7344962)
+texture = ExtResource("1_g3eks")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1404877507]
+custom_minimum_size = Vector2(800, 1000)
+layout_mode = 0
+offset_left = 691.00006
+offset_top = -224.00002
+offset_right = 1491.0
+offset_bottom = 858.4209
+rotation = 0.24129161
+color = Color(0.8980392, 0.49019608, 0.08235294, 1)
+
+[node name="Annabelle" type="Sprite2D" parent="ColorRect2" unique_id=105160940]
+position = Vector2(391.1066, 752.3375)
+rotation = -0.24129161
+scale = Vector2(0.7541901, 0.69975036)
+texture = ExtResource("2_v86rl")
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=732894535]
+custom_minimum_size = Vector2(800, 1000)
+layout_mode = 0
+offset_left = 1411.0
+offset_top = -158.0
+offset_right = 2211.0
+offset_bottom = 842.0
+rotation = 0.24129161
+color = Color(0.34901962, 0.34901962, 0.6666667, 1)
+
+[node name="Fred" type="Sprite2D" parent="ColorRect3" unique_id=476453285]
+position = Vector2(378.57874, 663.76514)
+rotation = -0.24129161
+scale = Vector2(0.64323854, 0.6432386)
+texture = ExtResource("3_13sgg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1563733366]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_con2f")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="TextureRect" unique_id=19400953]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="TextureButton" parent="TextureRect/CenterContainer" unique_id=822862345]
+unique_name_in_owner = true
+layout_mode = 2
+texture_normal = ExtResource("5_g3eks")
+texture_disabled = ExtResource("5_g3eks")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect/CenterContainer/PlayButton" unique_id=1243281716]
+layout_mode = 0
+offset_left = -54.0
+offset_top = -704.0
+offset_right = 220.56268
+offset_bottom = -634.5814
+theme = ExtResource("3_4ytvr")
+text = "Stagehands"
+
+[node name="Label" type="Label" parent="TextureRect/CenterContainer" unique_id=1076322053]
+layout_mode = 2
+theme = ExtResource("3_4ytvr")
+text = "PLAY"

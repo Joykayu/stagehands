@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://iflsnxlj0a57"]
+
+[ext_resource type="Script" uid="uid://d3q7g2ir8u4i3" path="res://scripts/puzzle_placeholder.gd" id="1_2t6tc"]
+[ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="2_0v4di"]
+
+[node name="PuzzlePlaceholder" type="Control" unique_id=1430073632]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2t6tc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1068331111]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=163087543]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 488.0
+offset_right = 1067.0
+offset_bottom = 562.0
+theme = ExtResource("2_0v4di")
+text = "Go next"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
