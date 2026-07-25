@@ -448,12 +448,12 @@
 	"line_23": {
 		"type": "line",
 		"left": {
-			"chara": "Boss",
+			"chara": "Player",
 			"mood": "neutral",
-			"focus": false
+			"focus": true
 		},
 		"right": {
-			"chara": "Player",
+			"chara": "Sarah",
 			"mood": "neutral",
 			"focus": true
 		},
@@ -479,7 +479,7 @@
 		"line": {
 			"speaker": "left",
 			"text": "The success of the festival depends on this. Accordingly, if the stage isn’t ready in time, i’ll be docking your pays and looking for a more competent team for the rest of the season.",
-			"audio": null
+			"audio": "s1r025.mp3"
 		},
 		"next": "line_25"
 	},
@@ -498,7 +498,7 @@
 		"line": {
 			"speaker": "right",
 			"text": "[i]*Damn! I’ll have to skip post-lunch nap…*[/i]",
-			"audio": "s1r025.mp3"
+			"audio": null
 		},
 		"next": "line_26"
 	},
@@ -573,7 +573,7 @@
 		},
 		"line": {
 			"speaker": "right",
-			"text": "Anyways. You! Come with me. Your planning puts you to help me with the quoicoubeh, and we don’t have time to spare! Allons-y!",
+			"text": "Anyways. You! Come with me. Your planning puts you to help me now, and we don’t have time to spare! Allons-y!",
 			"audio": "s1r030.mp3"
 		},
 		"next": "end"
