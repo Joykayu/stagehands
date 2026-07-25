@@ -13,6 +13,7 @@ var current_line : Dictionary
 var dialogue_audio_cache : Dictionary = {}
 var audio_playback_enabled := false
 var pending_audio_name := ""
+var waiting_for_puzzle_resume := false
 
 var chara_list : Dictionary[String,Character]
 
@@ -47,10 +48,8 @@ func _input(event):
 		if current_line["type"] == "line" :
 			load_block_to_ui(current_line)
 		elif current_line["type"] == "puzzle":
+			waiting_for_puzzle_resume = true
 			get_parent().next_transition("puzzle_in")
-			await get_tree().create_timer(1.0).timeout
-			load_next_line()
-			load_block_to_ui(current_line)
 
 func get_dialogue(src:String) -> void:
 	stop_voice()
@@ -167,6 +166,18 @@ func enable_audio_playback() -> void:
 	audio_playback_enabled = true
 	if pending_audio_name != "":
 		play_voice(pending_audio_name)
+
+
+func disable_audio_playback() -> void:
+	audio_playback_enabled = false
+
+
+func prepare_after_puzzle() -> void:
+	if !waiting_for_puzzle_resume:
+		return
+	waiting_for_puzzle_resume = false
+	load_next_line()
+	load_block_to_ui(current_line)
 
 
 
