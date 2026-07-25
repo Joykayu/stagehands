@@ -11,6 +11,8 @@ var scene_script : Dictionary
 var current_line : Dictionary
 
 var dialogue_audio_cache : Dictionary = {}
+var audio_playback_enabled := false
+var pending_audio_name := ""
 
 var chara_list : Dictionary[String,Character]
 
@@ -52,6 +54,8 @@ func _input(event):
 
 func get_dialogue(src:String) -> void:
 	stop_voice()
+	audio_playback_enabled = false
+	pending_audio_name = ""
 	scene_script = JSON.parse_string( FileAccess.get_file_as_string(src) )
 	if typeof(scene_script) != TYPE_DICTIONARY:
 		push_error("Invalid dialogue JSON: %s" % src)
@@ -140,10 +144,15 @@ func load_block_to_ui(block : Dictionary):
 
 func play_voice(audio_name) -> void:
 	if audio_name == null or audio_name == "":
+		pending_audio_name = ""
+		return
+	if !audio_playback_enabled:
+		pending_audio_name = audio_name
 		return
 	var stream = get_audio_stream(audio_name)
 	if stream == null:
 		return
+	pending_audio_name = ""
 	%VoicePlayer.stop()
 	%VoicePlayer.stream = stream
 	%VoicePlayer.play()
@@ -152,6 +161,12 @@ func play_voice(audio_name) -> void:
 func stop_voice() -> void:
 	if %VoicePlayer.playing:
 		%VoicePlayer.stop()
+
+
+func enable_audio_playback() -> void:
+	audio_playback_enabled = true
+	if pending_audio_name != "":
+		play_voice(pending_audio_name)
 
 
 
