@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://btfe8240ufk1n"]
 
-[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_gp3rj"]
-[ext_resource type="Texture2D" uid="uid://d3fih60s2u1nk" path="res://assets/graphics/puzzles/objects/snare1.png" id="2_y34rc"]
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_gp3rj"]
+[ext_resource type="Texture2D" uid="uid://d3fih60s2u1nk" path="res://assets/graphics/puzzles/camion/snare1.png" id="2_y34rc"]
 
 [node name="Snare1" unique_id=2139717115 instance=ExtResource("1_gp3rj")]
 
