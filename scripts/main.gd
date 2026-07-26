@@ -74,10 +74,8 @@ func next_transition(type):
 		"puzzle_out":
 			state = "dialogue"
 			$DialogSystem.disable_audio_playback()
-			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
 			$DialogSystem.prepare_after_puzzle()
 			$PuzzleSystem.kill_puzzle()
-			$DialogSystem.is_active = true
 			$AudioManager.exit_puzzle()
 	
 	curr_transition_idx += 1
@@ -99,6 +97,10 @@ func spawn_transition(type):
 func on_transition_finished():
 	match state:
 		"dialogue":
+			# Only let mouse input reach the dialog system once the transition has
+			# fully finished playing (same gate used for re-enabling voice audio),
+			# so clicks never go through while a transition is still on screen.
+			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
 			$DialogSystem.enable_audio_playback()
 			$DialogSystem.is_active = true
 		"puzzle":
