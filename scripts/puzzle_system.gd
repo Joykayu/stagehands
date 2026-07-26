@@ -16,7 +16,7 @@ var puzzle_list : Dictionary = {
 	"puzzle3" : {
 		"scene" : "res://scenes/puzzles/tower/puzzle_tower.tscn",
 		"character" : "Sarah",
-		"hint" : "Stack and place each piece to build the tower, then guide the sun into place.",
+		"hint" : "Stack and place each piece to build the tower, then make sure the sun sits stable above the line.",
 	},
 }
 
