@@ -32,6 +32,16 @@ func start():
 	%AmbientPlayer.play()
 
 
+func enter_menu():
+	_fade_music(music_volume_puzzle_db)
+	_fade_ambient_out()
+
+
+func exit_menu():
+	_fade_music(music_volume_normal_db)
+	_fade_ambient_in()
+  
+  
 func play_transition_bell():
 	%BellPlayer.stop()
 	%BellPlayer.play()

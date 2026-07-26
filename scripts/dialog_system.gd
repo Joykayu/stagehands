@@ -115,18 +115,24 @@ func set_chara(loc, chara = null, pose = null, focus := false):
 			current_sprite = %DialogControl/CharaLeftSprite
 		"right":
 			current_sprite = %DialogControl/CharaRightSprite
+
+	var shadow_sprite = current_sprite.get_child(0)
+
 	if chara != null :
 		if pose!= null :
 			if !focus:
 				current_sprite.texture = chara_list[chara].chara_poses[pose+"_inactive"]
 			else:
 				current_sprite.texture = chara_list[chara].chara_poses[pose]
-			
+
 		else:
 			current_sprite.texture = chara_list[chara].chara_poses["idle"]
 
 	else:
 		current_sprite.texture = null
+
+	if shadow_sprite != null:
+		shadow_sprite.texture = current_sprite.texture
 
 func preload_dialogue_audio() -> void:
 	dialogue_audio_cache.clear()
