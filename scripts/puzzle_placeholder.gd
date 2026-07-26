@@ -1,5 +1,6 @@
 extends Control
 
+signal puzzle_completed
 
 func _on_button_pressed():
-	get_parent().next_transition("puzzle_out")
+	puzzle_completed.emit()

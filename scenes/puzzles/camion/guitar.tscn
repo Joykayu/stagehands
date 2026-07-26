@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwen5mv8nd6yc"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_mq804"]
+[ext_resource type="Texture2D" uid="uid://dq6w0lfukfe63" path="res://assets/graphics/puzzles/objects/Guitar.png" id="2_8baca"]
+
+[node name="Guitar" unique_id=2139717115 instance=ExtResource("1_mq804")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=890203929]
+mass = 4.0
+
+[node name="Sprite2D" parent="RigidBody2D" index="0" unique_id=96188590]
+texture = ExtResource("2_8baca")
+
+[node name="CollisionShape2D" parent="RigidBody2D" index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(0, -181, -36, -178, -24, 9, -60, 10, -56, 174, 56, 176, 48, 31, 9, 35)

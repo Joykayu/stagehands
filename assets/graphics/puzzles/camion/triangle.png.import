@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc1jhks0oypyv"
-path="res://.godot/imported/test_sarah.png-6aa1223a8dfcede1b7cca98bcf2235b2.ctex"
+uid="uid://dgbt874axc1sa"
+path="res://.godot/imported/triangle.png-a8717b763aa66f3ec3c470a6b775af0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/test_sarah.png"
-dest_files=["res://.godot/imported/test_sarah.png-6aa1223a8dfcede1b7cca98bcf2235b2.ctex"]
+source_file="res://assets/graphics/puzzles/camion/triangle.png"
+dest_files=["res://.godot/imported/triangle.png-a8717b763aa66f3ec3c470a6b775af0c.ctex"]
 
 [params]
 

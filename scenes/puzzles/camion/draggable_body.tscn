@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cj12mmykw41i0"]
+
+[ext_resource type="Script" uid="uid://6h6mfaci6p64" path="res://scripts/draggable_body.gd" id="1_ggk7b"]
+
+[node name="DraggableBody" type="Node2D" unique_id=2139717115]
+script = ExtResource("1_ggk7b")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=890203929]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=96188590]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="RigidBody2D" unique_id=1565047248]
+visible = false
+
+[node name="MousePin" type="PinJoint2D" parent="." unique_id=1534571712]
+
+[node name="FakeBody" type="StaticBody2D" parent="MousePin" unique_id=1318768472]

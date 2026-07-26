@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cicxygpdvwull"
-path="res://.godot/imported/sarah.png-4091e9497486bdde48c6709e148ad1a5.ctex"
+uid="uid://cmqj7713d6c75"
+path="res://.godot/imported/piano.png-dd815e8fca3751df8ff96e7d7bb3f3d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/sarah.png"
-dest_files=["res://.godot/imported/sarah.png-4091e9497486bdde48c6709e148ad1a5.ctex"]
+source_file="res://assets/graphics/puzzles/camion/piano.png"
+dest_files=["res://.godot/imported/piano.png-dd815e8fca3751df8ff96e7d7bb3f3d5.ctex"]
 
 [params]
 

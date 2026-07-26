@@ -94,3 +94,5 @@ func _on_animation_player_animation_finished(_anim_name):
 	%Stripes.modulate = Color.WHITE
 	%Stripes.hide()
 	
+	self.queue_free()
+	
