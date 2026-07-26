@@ -43,13 +43,15 @@ var transitions_list = [
 
 
 func _ready():
+	$AudioManager.start()
+	$AudioManager.enter_menu()
 	for key in chara_res_list.keys():
 		chara_res_dict[key] = load(chara_res_list[key])
 	$Menu/TextureRect/PlayButton.connect("pressed",on_play_button_pressed)
 
 func on_play_button_pressed():
 	$Menu/TextureRect/PlayButton.disabled = true
-	$AudioManager.start()
+	$AudioManager.exit_menu()
 	next_transition("dialogue")
 
 func next_transition(type):
