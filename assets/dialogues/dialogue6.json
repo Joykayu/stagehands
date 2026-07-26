@@ -4,8 +4,7 @@
 			"Fred",
 			"Sarah",
 			"Player",
-			"Annabelle",
-            "Everyone"
+			"Annabelle"
 		]
 	},
 	"start": {
@@ -44,7 +43,7 @@
 			"text": "Hammers, check. Screwdriver, check.. I think everything’s in order. Oh, could you give me a hand with this quoicoubeh?",
 			"audio": "s6r127.mp3"
 		},
-		"next": "puzzle4"
+		"next": "line_2"
 	},
 	"puzzle4": {
 		"type": "puzzle",

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bbtygnwx8mi5j"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_e5153"]
+[ext_resource type="Script" uid="uid://c3v4aqsst0sx4" path="res://scenes/puzzles/tower/sun.gd" id="2_c8466"]
+[ext_resource type="Texture2D" uid="uid://bafofwa2t71g7" path="res://assets/graphics/puzzles/tower/sun.png" id="2_rhqay"]
+
+[node name="Sun" unique_id=2139717115 instance=ExtResource("1_e5153")]
+script = ExtResource("2_c8466")
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="0" unique_id=96188590]
+texture = ExtResource("2_rhqay")
+
+[node name="CollisionShape2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-110, -130, -92, -150, -26, -171, 2, -172, 71, -165, 99, -152, 137, -101, 155, -74, 161, -1, 154, 24, 120, 89, 99, 105, 52, 155, 52, 168, -42, 168, -42, 154, -66, 123, -90, 110, -133, 60, -148, 32, -157, -41, -145, -69)

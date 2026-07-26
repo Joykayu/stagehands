@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bego2dhgahxrl"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_aj8l8"]
+[ext_resource type="Script" uid="uid://6h6mfaci6p64" path="res://scripts/draggable_body.gd" id="2_6ltu5"]
+[ext_resource type="Texture2D" uid="uid://cd8j3q0gvyloa" path="res://assets/graphics/puzzles/tower/boxlines.png" id="2_7sv3x"]
+
+[node name="BoxLines" unique_id=2139717115 instance=ExtResource("1_aj8l8")]
+script = ExtResource("2_6ltu5")
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="0" unique_id=96188590]
+texture = ExtResource("2_7sv3x")
+
+[node name="CollisionShape2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="1" unique_id=1565047248]
+visible = true
+position = Vector2(-77, -78)
+polygon = PackedVector2Array(-6, 1, 161, 1, 158, 157, -8, 154)

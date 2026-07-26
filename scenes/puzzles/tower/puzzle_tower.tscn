@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c8f6lmbenu7k5"]
+
+[ext_resource type="Script" uid="uid://chw35nsnu34nl" path="res://scenes/puzzles/tower/puzzle_tower.gd" id="1_8liex"]
+[ext_resource type="Texture2D" uid="uid://jlr1loi1yy50" path="res://assets/graphics/puzzles/tower/background_tricky.png" id="2_8liex"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_c3t4r"]
+
+[node name="PuzzleTower" type="Control" unique_id=411532830]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8liex")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1705392585]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("2_8liex")
+
+[node name="Borders" type="StaticBody2D" parent="." unique_id=460481524]
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_c3t4r")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Borders" unique_id=44439607]
+position = Vector2(945, 575)
+polygon = PackedVector2Array(980, 261, 970, -723, -176, -726, -177, -901, 1073, -890, 1078, 689, -1186, 690, -1181, -906, -177, -901, -178, -726, -948, -726, -945, 263)
+
+[node name="Objective" type="Area2D" parent="." unique_id=1025376425]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Objective" unique_id=113022262]
+position = Vector2(945, 575)
+polygon = PackedVector2Array(-701, -416, -783, -573, 21, -575, 772, -573, 774, -509, 508, -441, 213, -399, -60, -373, -268, -375, -500, -392)
+
+[node name="Draggables" type="Node2D" parent="." unique_id=310771425]
+position = Vector2(1741, 379)
+
+[connection signal="mouse_entered" from="Borders" to="." method="_on_boundaries_mouse_entered"]
+[connection signal="body_entered" from="Objective" to="." method="_on_objective_body_entered"]
+[connection signal="body_exited" from="Objective" to="." method="_on_objective_body_exited"]

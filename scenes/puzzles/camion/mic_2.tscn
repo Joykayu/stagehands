@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1mk70bbdpe4l"]
 
-[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_e42bj"]
-[ext_resource type="Texture2D" uid="uid://bbx6tj4ner54q" path="res://assets/graphics/puzzles/objects/mic 2.png" id="2_olugn"]
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_e42bj"]
+[ext_resource type="Texture2D" uid="uid://bbx6tj4ner54q" path="res://assets/graphics/puzzles/camion/mic 2.png" id="2_olugn"]
 
 [node name="Mic2" unique_id=2139717115 instance=ExtResource("1_e42bj")]
 
