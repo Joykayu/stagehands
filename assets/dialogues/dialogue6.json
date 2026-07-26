@@ -694,11 +694,6 @@
 			"text": "Hey, before you leave, can you help me with this one last quoicoubeh?",
 			"audio": "s6r161.mp3"
 		},
-		"next": "puzzle5"
-	},
-	"puzzle5": {
-		"type": "puzzle",
-		"chara": "Fred",
 		"next": "line_36"
 	},
 	"line_36": {
