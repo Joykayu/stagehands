@@ -89,6 +89,11 @@ func begin_transition(type = "default"):
 			%Title.text = "Epilogue"
 			%Title.show()
 			$AnimationPlayer.play("slide")
+
+		"credits":
+			%CreditsText.text = "[center][b]Stagehands[/b]\nA GMTK Game Jam 2026 Entry\n\n[color=#cccccc]Game Design & Programming[/color]\nÉmile Gervais-Lalonde\n\n[color=#cccccc]Additional Programming[/color]\nAlexandre Paquette-Lessard\n\n[color=#cccccc]Art & UI Design[/color]\nÉmile Gervais-Lalonde\n\n[color=#cccccc]Character Design[/color]\nMyriam De Grandmont-Sauvé\n\n[color=#cccccc]Music[/color]\nKarl-Étienne Doré\n\n[color=#cccccc]Sound Design[/color]\nAlexandre Paquette-Lessard\n\n[color=#cccccc]Writing[/color]\nÉmile Gervais-Lalonde\n\n[color=#cccccc]Voice Acting[/color]\nMyriam De Grandmont-Sauvé\nGabriel St-Amant\nAlexandre Paquette-Lessard\nNicolas Renaud\n\n[color=#888888]Made with Godot Engine 4\nThank you for playing![/color][/center]"
+			%CreditsText.show()
+			$AnimationPlayer.play("slide_credits")
 			
 
 func _on_animation_player_animation_finished(_anim_name):
