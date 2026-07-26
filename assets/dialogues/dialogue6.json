@@ -1,908 +1,908 @@
 {
-	"metadata": {
-		"chara_list": [
-			"Fred",
-			"Sarah",
-			"Player",
-			"Annabelle"
-		]
-	},
-	"start": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ok, I have the XPS-12, now.. Ah yes, here is the box for my SP60’s. Okay, all set for the cables…",
-			"audio": "s6r126.mp3"
-		},
-		"next": "line_1"
-	},
-	"line_1": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hammers, check. Screwdriver, check.. I think everything’s in order. Oh, could you give me a hand with this quoicoubeh?",
-			"audio": "s6r127.mp3"
-		},
-		"next": "line_2"
-	},
-	"puzzle4": {
-		"type": "puzzle",
-		"chara": "Fred",
-		"next": "line_2"
-	},
-	"line_2": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Sure!",
-			"audio": null
-		},
-		"next": "line_3"
-	},
-	"line_3": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Thanks. And good job on the festival! For a first time, I think you did pretty well. Not as easy as it seems, right?",
-			"audio": "s6r129.mp3"
-		},
-		"next": "line_4"
-	},
-	"line_4": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Definitely![i] Although i didn’t think it looked specifically easy…[/i]",
-			"audio": null
-		},
-		"next": "line_5"
-	},
-	"line_5": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I’m glad we managed, even under such pressure. I have to say, if we didn’t stick together, we wouldn’t have made it.",
-			"audio": "s6r131.mp3"
-		},
-		"next": "line_6"
-	},
-	"line_6": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Yeah, Annabelle was great at keeping us motivated.",
-			"audio": null
-		},
-		"next": "line_7"
-	},
-	"line_7": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Yes, definitely. But not just Annabelle. I’m glad Fred was on top of things, and I appreciate him making efforts.",
-			"audio": "s6r133.mp3"
-		},
-		"next": "line_8"
-	},
-	"line_8": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Yeah. I didn’t expect him to ask you for help when the projector got loose!",
-			"audio": null
-		},
-		"next": "line_9"
-	},
-	"line_9": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Me neither. What do you know. There may be some hope there! [i]Winks[/i].",
-			"audio": "s6r135.mp3"
-		},
-		"next": "line_10"
-	},
-	"line_10": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Alright.. Well, I think I’m all packed up. See you next time, I hope?",
-			"audio": "s6r136.mp3"
-		},
-		"next": "line_11"
-	},
-	"line_11": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hey, Anna! I’m going now.",
-			"audio": "s6r137.mp3"
-		},
-		"next": "line_12"
-	},
-	"line_12": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Didn’t forget anything? [i]She pauses.[/i] Actually, I’m sure you didn’t. Thanks for everything Sarah, I’ll miss you.",
-			"audio": "s6r138.mp3"
-		},
-		"next": "line_13"
-	},
-	"line_13": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Until next time!",
-			"audio": "s6r139.mp3"
-		},
-		"next": "line_14"
-	},
-	"line_14": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Yeah! Sure. Until next time.",
-			"audio": "s6r140.mp3"
-		},
-		"next": "line_15"
-	},
-	"line_15": {
-		"type": "line",
-		"left": {
-			"chara": "Sarah",
-			"mood": "cheerful",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Bye everyone! [i]She gets up in her truck and drives away.[/i]",
-			"audio": "s6r141.mp3"
-		},
-		"next": "line_16"
-	},
-	"line_16": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Bye!",
-			"audio": null
-		},
-		"next": "line_17"
-	},
-	"line_17": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]Annabelle waves her away. Fred gets back to packing his equipment, as you stand there with her watching Sarah’s truck fade in the distance.[/i]",
-			"audio": null
-		},
-		"next": "line_18"
-	},
-	"line_18": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ah.. she really reminds me of a younger me.",
-			"audio": "s6r144.mp3"
-		},
-		"next": "line_19"
-	},
-	"line_19": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "You know, this one felt a bit special.",
-			"audio": "s6r145.mp3"
-		},
-		"next": "line_20"
-	},
-	"line_20": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I don’t think there will be a next time.",
-			"audio": "s6r146.mp3"
-		},
-		"next": "line_21"
-	},
-	"line_21": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She must have earned her rest after all.[/i]",
-			"audio": null
-		},
-		"next": "line_22"
-	},
-	"line_22": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "No?",
-			"audio": null
-		},
-		"next": "line_23"
-	},
-	"line_23": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "No. [i]She looks sad for a moment. [/i]But you guys will keep up the good work.",
-			"audio": "s6r149.mp3"
-		},
-		"next": "line_24"
-	},
-	"line_24": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "At first i was afraid…",
-			"audio": "s6r150.mp3"
-		},
-		"next": "line_25"
-	},
-	"line_25": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She was petrified?[/i]",
-			"audio": null
-		},
-		"next": "line_26"
-	},
-	"line_26": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Afraid of all these changes. Of the job becoming too harsh, too stressful, too… much.",
-			"audio": "s6r152.mp3"
-		},
-		"next": "line_27"
-	},
-	"line_27": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "But now that I see you guys… I can leave lighthearted. Le coeur léger!",
-			"audio": "s6r153.mp3"
-		},
-		"next": "line_28"
-	},
-	"line_28": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "[i]Jokingly[/i]. You ARE going to continue, right?",
-			"audio": "s6r154.mp3"
-		},
-		"next": "line_29"
-	},
-	"line_29": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Y.. Yes! Sure will. Thanks Annabelle, for everything.",
-			"audio": null
-		},
-		"next": "line_30"
-	},
-	"line_30": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "It’s Anna. It was great meeting you.",
-			"audio": "s6r156.mp3"
-		},
-		"next": "line_31"
-	},
-	"line_31": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "(...)",
-			"audio": null
-		},
-		"next": "line_32"
-	},
-	"line_32": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hey Fred, I’m going! See you guys, good luck with the rest!",
-			"audio": "s6r158.mp3"
-		},
-		"next": "line_33"
-	},
-	"line_33": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Se you Annabelle! Until next time!",
-			"audio": "s6r159.mp3"
-		},
-		"next": "line_34"
-	},
-	"line_34": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You watch as Annabelle leaves.[/i]",
-			"audio": null
-		},
-		"next": "line_35"
-	},
-	"line_35": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hey, before you leave, can you help me with this one last quoicoubeh?",
-			"audio": "s6r161.mp3"
-		},
-		"next": "line_36"
-	},
-	"line_36": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Phew! What a mess that was!",
-			"audio": "s6r162.mp3"
-		},
-		"next": "line_37"
-	},
-	"line_37": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "But I’m glad with how it went. It’s always a mess anyways.",
-			"audio": "s6r163.mp3"
-		},
-		"next": "line_38"
-	},
-	"line_38": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Au fait, will you be there next week to Zouzoupalooza?",
-			"audio": "s6r164.mp3"
-		},
-		"next": "line_39"
-	},
-	"line_39": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Hum, I don’t know yet!",
-			"audio": null
-		},
-		"next": "line_40"
-	},
-	"line_40": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Sarah and I will be working there. I’m sure we can find a spot for you, if you’re interested. Could be fun to be the three of us again?",
-			"audio": "s6r166.mp3"
-		},
-		"next": "line_41"
-	},
-	"line_41": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Sure, that could be nice! I could use the money, also.",
-			"audio": null
-		},
-		"next": "line_42"
-	},
-	"line_42": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I don’t know if Annabelle will also be there. She didn’t mention it.",
-			"audio": "s6r168.mp3"
-		},
-		"next": "line_43"
-	},
-	"line_43": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You hesitate.[/i] Yeah, perhaps.",
-			"audio": null
-		},
-		"next": "line_44"
-	},
-	"line_44": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "OK, I won’t hold you up too long. You should go and get some rest, me I still need to handle a couple of things. See you next week then?",
-			"audio": "s6r170.mp3"
-		},
-		"next": "line_45"
-	},
-	"line_45": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "See you next week!",
-			"audio": null
-		},
-		"next": "line_46"
-	},
-	"line_46": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You take your car and leave back home. The end.[/i]",
-			"audio": null
-		},
-		"next": "end"
-	}
+    "metadata": {
+        "chara_list": [
+            "Fred",
+            "Sarah",
+            "Player",
+            "Annabelle"
+        ]
+    },
+    "start": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ok, I have the XPS-12, now.. Ah yes, here is the box for my SP60’s. Okay, all set for the cables…",
+            "audio": "s6r126.mp3"
+        },
+        "next": "line_1"
+    },
+    "line_1": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hammers, check. Screwdriver, check.. I think everything’s in order. Oh, could you give me a hand with the quoicoubeh?",
+            "audio": "s6r127.mp3"
+        },
+        "next": "line_2"
+    },
+    "puzzle4": {
+        "type": "puzzle",
+        "chara": "Fred",
+        "next": "line_2"
+    },
+    "line_2": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Sure!",
+            "audio": null
+        },
+        "next": "line_3"
+    },
+    "line_3": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Thanks. And good job on the festival! For a first time, I think you did pretty well. Not as easy as it seems, right?",
+            "audio": "s6r129.mp3"
+        },
+        "next": "line_4"
+    },
+    "line_4": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Definitely![i] Although i didn’t think it looked specifically easy…[/i]",
+            "audio": null
+        },
+        "next": "line_5"
+    },
+    "line_5": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I’m glad we managed, even under such pressure. I have to say, if we didn’t stick together, we wouldn’t have made it.",
+            "audio": "s6r131.mp3"
+        },
+        "next": "line_6"
+    },
+    "line_6": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yeah, Annabelle was great at keeping us motivated.",
+            "audio": null
+        },
+        "next": "line_7"
+    },
+    "line_7": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Yes, definitely. But not just Annabelle. I’m glad Fred was on top of things, and I appreciate him making efforts.",
+            "audio": "s6r133.mp3"
+        },
+        "next": "line_8"
+    },
+    "line_8": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yeah. I didn’t expect him to ask you for help when the projector got loose!",
+            "audio": null
+        },
+        "next": "line_9"
+    },
+    "line_9": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Me neither. What do you know. There may be some hope there! [i]Winks[/i].",
+            "audio": "s6r135.mp3"
+        },
+        "next": "line_10"
+    },
+    "line_10": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Alright.. Well, I think I’m all packed up. See you next time, I hope?",
+            "audio": "s6r136.mp3"
+        },
+        "next": "line_11"
+    },
+    "line_11": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hey, Anna! I’m going now.",
+            "audio": "s6r137.mp3"
+        },
+        "next": "line_12"
+    },
+    "line_12": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": false
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Didn’t forget anything? [i]She pauses.[/i] Actually, I’m sure you didn’t. Thanks for everything Sarah, I’ll miss you.",
+            "audio": "s6r138.mp3"
+        },
+        "next": "line_13"
+    },
+    "line_13": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Until next time!",
+            "audio": "s6r139.mp3"
+        },
+        "next": "line_14"
+    },
+    "line_14": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": false
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yeah! Sure. Until next time.",
+            "audio": "s6r140.mp3"
+        },
+        "next": "line_15"
+    },
+    "line_15": {
+        "type": "line",
+        "left": {
+            "chara": "Sarah",
+            "mood": "cheerful",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Bye everyone! [i]She gets up in her truck and drives away.[/i]",
+            "audio": "s6r141.mp3"
+        },
+        "next": "line_16"
+    },
+    "line_16": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Bye!",
+            "audio": null
+        },
+        "next": "line_17"
+    },
+    "line_17": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]Annabelle waves her away. Fred gets back to packing his equipment, as you stand there with her watching Sarah’s truck fade in the distance.[/i]",
+            "audio": null
+        },
+        "next": "line_18"
+    },
+    "line_18": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ah.. she really reminds me of a younger me.",
+            "audio": "s6r144.mp3"
+        },
+        "next": "line_19"
+    },
+    "line_19": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "You know, this one felt a bit special.",
+            "audio": "s6r145.mp3"
+        },
+        "next": "line_20"
+    },
+    "line_20": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I don’t think there will be a next time.",
+            "audio": "s6r146.mp3"
+        },
+        "next": "line_21"
+    },
+    "line_21": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She must have earned her rest after all.[/i]",
+            "audio": null
+        },
+        "next": "line_22"
+    },
+    "line_22": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "No?",
+            "audio": null
+        },
+        "next": "line_23"
+    },
+    "line_23": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "No. [i]She looks sad for a moment. [/i]But you guys will keep up the good work.",
+            "audio": "s6r149.mp3"
+        },
+        "next": "line_24"
+    },
+    "line_24": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "At first i was afraid…",
+            "audio": "s6r150.mp3"
+        },
+        "next": "line_25"
+    },
+    "line_25": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She was petrified?[/i]",
+            "audio": null
+        },
+        "next": "line_26"
+    },
+    "line_26": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Afraid of all these changes. Of the job becoming too harsh, too stressful, too… much.",
+            "audio": "s6r152.mp3"
+        },
+        "next": "line_27"
+    },
+    "line_27": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "But now that I see you guys… I can leave lighthearted. Le coeur léger!",
+            "audio": "s6r153.mp3"
+        },
+        "next": "line_28"
+    },
+    "line_28": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i]Jokingly[/i]. You ARE going to continue, right?",
+            "audio": "s6r154.mp3"
+        },
+        "next": "line_29"
+    },
+    "line_29": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Y.. Yes! Sure will. Thanks Annabelle, for everything.",
+            "audio": null
+        },
+        "next": "line_30"
+    },
+    "line_30": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "It’s Anna. It was great meeting you.",
+            "audio": "s6r156.mp3"
+        },
+        "next": "line_31"
+    },
+    "line_31": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "(...)",
+            "audio": null
+        },
+        "next": "line_32"
+    },
+    "line_32": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hey Fred, I’m going! See you guys, good luck with the rest!",
+            "audio": "s6r158.mp3"
+        },
+        "next": "line_33"
+    },
+    "line_33": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Se you Annabelle! Until next time!",
+            "audio": "s6r159.mp3"
+        },
+        "next": "line_34"
+    },
+    "line_34": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You watch as Annabelle leaves.[/i]",
+            "audio": null
+        },
+        "next": "line_35"
+    },
+    "line_35": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hey, before you leave, can you help me with this one last quoicoubeh?",
+            "audio": "s6r161.mp3"
+        },
+        "next": "line_36"
+    },
+    "line_36": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Phew! What a mess that was!",
+            "audio": "s6r162.mp3"
+        },
+        "next": "line_37"
+    },
+    "line_37": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "But I’m glad with how it went. It’s always a mess anyways.",
+            "audio": "s6r163.mp3"
+        },
+        "next": "line_38"
+    },
+    "line_38": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Au fait, will you be there next week to Zouzoupalooza?",
+            "audio": "s6r164.mp3"
+        },
+        "next": "line_39"
+    },
+    "line_39": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Hum, I don’t know yet!",
+            "audio": null
+        },
+        "next": "line_40"
+    },
+    "line_40": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Sarah and I will be working there. I’m sure we can find a spot for you, if you’re interested. Could be fun to be the three of us again?",
+            "audio": "s6r166.mp3"
+        },
+        "next": "line_41"
+    },
+    "line_41": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Sure, that could be nice! I could use the money, also.",
+            "audio": null
+        },
+        "next": "line_42"
+    },
+    "line_42": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I don’t know if Annabelle will also be there. She didn’t mention it.",
+            "audio": "s6r168.mp3"
+        },
+        "next": "line_43"
+    },
+    "line_43": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You hesitate.[/i] Yeah, perhaps.",
+            "audio": null
+        },
+        "next": "line_44"
+    },
+    "line_44": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "OK, I won’t hold you up too long. You should go and get some rest, me I still need to handle a couple of things. See you next week then?",
+            "audio": "s6r170.mp3"
+        },
+        "next": "line_45"
+    },
+    "line_45": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "See you next week!",
+            "audio": null
+        },
+        "next": "line_46"
+    },
+    "line_46": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You take your car and leave back home. The end.[/i]",
+            "audio": null
+        },
+        "next": "end"
+    }
 }

@@ -6,20 +6,22 @@
 [ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="3_4ytvr"]
 [ext_resource type="Texture2D" uid="uid://bocbd6s71koel" path="res://assets/graphics/characters/fred/fred_body_neutral_rgb.png" id="3_v86rl"]
 [ext_resource type="Texture2D" uid="uid://c26ir4wteqiey" path="res://assets/graphics/title.png" id="6_v86rl"]
-[ext_resource type="Shader" uid="uid://drop_shader" path="res://assets/graphics/drop_shadow.gdshader" id="7_shad"]
-[ext_resource type="Script" uid="uid://menu_script" path="res://scripts/menu.gd" id="8_mgd"]
+[ext_resource type="Shader" uid="uid://rbycfepuasle" path="res://assets/graphics/drop_shadow.gdshader" id="7_shad"]
+[ext_resource type="Script" uid="uid://b6ce6vgu53g52" path="res://scripts/menu.gd" id="8_mgd"]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id="1"]
 shader = ExtResource("7_shad")
+shader_parameter/shadow_color = Color(0, 0, 0, 0.4)
+shader_parameter/blur_size = 3.0
 
 [node name="Menu" type="Control" unique_id=949658739]
-script = ExtResource("8_mgd")
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("8_mgd")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1943001673]
 custom_minimum_size = Vector2(640, 1080)
@@ -34,10 +36,10 @@ position = Vector2(331.0337, 573.9254)
 rotation = -0.43859625
 texture = ExtResource("1_g3eks")
 
-[node name="Shadow" type="Sprite2D" parent="ColorRect/Sarah"]
-material = SubResource(1)
+[node name="Shadow" type="Sprite2D" parent="ColorRect/Sarah" unique_id=594504778]
 show_behind_parent = true
 texture_filter = 1
+material = SubResource("1")
 position = Vector2(9, 9)
 texture = ExtResource("1_g3eks")
 
@@ -54,10 +56,10 @@ color = Color(0.8980392, 0.49019608, 0.08235294, 1)
 position = Vector2(324.0337, 541.9254)
 texture = ExtResource("2_g3eks")
 
-[node name="Shadow" type="Sprite2D" parent="ColorRect2/Annabelle"]
-material = SubResource(1)
+[node name="Shadow" type="Sprite2D" parent="ColorRect2/Annabelle" unique_id=417969744]
 show_behind_parent = true
 texture_filter = 1
+material = SubResource("1")
 position = Vector2(9, 9)
 texture = ExtResource("2_g3eks")
 
@@ -75,10 +77,10 @@ position = Vector2(306.0337, 605.9254)
 rotation = 0.35204634
 texture = ExtResource("3_v86rl")
 
-[node name="Shadow" type="Sprite2D" parent="ColorRect3/Fred"]
-material = SubResource(1)
+[node name="Shadow" type="Sprite2D" parent="ColorRect3/Fred" unique_id=1991018143]
 show_behind_parent = true
 texture_filter = 1
+material = SubResource("1")
 position = Vector2(9, 9)
 texture = ExtResource("3_v86rl")
 
