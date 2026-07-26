@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/puzzle_controls.gd" id="1_ctrls"]
+
+[node name="PuzzleControls" type="HBoxContainer"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 236.0
+offset_bottom = 56.0
+theme_override_constants/separation = 8
+script = ExtResource("1_ctrls")
+
+[node name="RetryButton" type="Button" parent="."]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 40)
+theme_override_font_sizes/font_size = 20
+text = "Retry"
+
+[node name="SkipButton" type="Button" parent="."]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 40)
+theme_override_font_sizes/font_size = 20
+text = "Skip"
+
+[connection signal="pressed" from="RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]
