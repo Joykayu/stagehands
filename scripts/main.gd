@@ -48,6 +48,7 @@ func _ready():
 
 func on_play_button_pressed():
 	$Menu/TextureRect/CenterContainer/PlayButton.disabled = true
+	$AudioManager.start()
 	next_transition("dialogue")
 
 func next_transition(type):
@@ -68,6 +69,7 @@ func next_transition(type):
 			$PuzzleSystem.load_puzzle(transitions_list[curr_transition_idx])
 			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_IGNORE)
 			$DialogSystem.is_active = false
+			$AudioManager.enter_puzzle()
 		"puzzle_out":
 			$DialogSystem.disable_audio_playback()
 			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
@@ -75,6 +77,7 @@ func next_transition(type):
 			state = "dialogue"
 			$PuzzleSystem.kill_puzzle()
 			$DialogSystem.is_active = true
+			$AudioManager.exit_puzzle()
 	
 	curr_transition_idx += 1
 
