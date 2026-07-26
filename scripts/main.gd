@@ -38,7 +38,8 @@ var transitions_list = [
 	"puzzle3",
 	"outro",
 	"epilogue",
-	"end"
+	"end",
+	"credits"
 ]
 
 
@@ -56,6 +57,11 @@ func on_play_button_pressed():
 
 func next_transition(type):
 	$DialogSystem.is_active = false
+	# The last dialogue file (epilogue) has no successor - once it's been fully
+	# read, redirect straight to the "end" transition instead of trying (and
+	# failing) to load a dialogue_list entry that doesn't exist.
+	if type == "dialogue" and curr_dialogue_idx >= dialogue_list.size():
+		type = "end"
 	spawn_transition(type)
 	
 	await get_tree().create_timer(1.0).timeout
@@ -67,6 +73,10 @@ func next_transition(type):
 		"dialogue" :
 			$DialogSystem.get_dialogue(dialogue_path + dialogue_list[curr_dialogue_idx])
 			curr_dialogue_idx +=1
+		"end":
+			state = "end"
+		"credits":
+			state = "credits"
 		"puzzle_in" :
 			state = "puzzle"
 			$PuzzleSystem.load_puzzle(transitions_list[curr_transition_idx])
@@ -76,19 +86,20 @@ func next_transition(type):
 		"puzzle_out":
 			state = "dialogue"
 			$DialogSystem.disable_audio_playback()
-			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
 			$DialogSystem.prepare_after_puzzle()
 			$PuzzleSystem.kill_puzzle()
-			$DialogSystem.is_active = true
 			$AudioManager.exit_puzzle()
 	
 	curr_transition_idx += 1
 
 
 func spawn_transition(type):
-	# Skip the bell for the very first transition (menu -> intro) and for puzzle in/out transitions.
+	# Skip the bell for the very first transition (menu -> intro), for puzzle in/out
+	# transitions, and for the epilogue transitions (the last two: "epilogue" and "end").
 	var is_puzzle_transition = type == "puzzle_in" or type == "puzzle_out"
-	if curr_transition_idx != 0 and !is_puzzle_transition:
+	var transition_key = transitions_list[curr_transition_idx]
+	var is_epilogue_transition = transition_key == "epilogue" or transition_key == "end" or transition_key == "credits"
+	if curr_transition_idx != 0 and !is_puzzle_transition and !is_epilogue_transition:
 		$AudioManager.play_transition_bell()
 	var instance = transition_scene.instantiate()
 	add_child(instance)
@@ -98,10 +109,19 @@ func spawn_transition(type):
 func on_transition_finished():
 	match state:
 		"dialogue":
+			# Only let mouse input reach the dialog system once the transition has
+			# fully finished playing (same gate used for re-enabling voice audio),
+			# so clicks never go through while a transition is still on screen.
+			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
 			$DialogSystem.enable_audio_playback()
 			$DialogSystem.is_active = true
 		"puzzle":
 			#puzzle is active
+			pass
+		"end":
+			# Chain straight into the credits screen once "The End" has finished playing.
+			next_transition("credits")
+		"credits":
 			pass
 
 func set_mouse_filter_recursive(node: Node, filter: Control.MouseFilter) -> void:
