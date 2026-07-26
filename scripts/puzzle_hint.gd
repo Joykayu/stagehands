@@ -1,8 +1,8 @@
 extends Control
 
 ## Small overlay shown during puzzles: the character portrait giving the
-## puzzle plus a short line of instructions/hints. Click anywhere to
-## dismiss it and reveal the puzzle underneath.
+## puzzle plus a short line of instructions/hints. Press the skip/close
+## button (top-right) to dismiss it and reveal the puzzle underneath.
 ##
 ## set_hint() can be called at any time (including while the puzzle is
 ## running) so a puzzle script can update the hint as the player progresses,
@@ -11,13 +11,9 @@ extends Control
 
 var _dismissed := false
 
-func _input(event: InputEvent) -> void:
-	if _dismissed or !visible:
-		return
-	if event is InputEventMouseButton and event.pressed:
-		_dismissed = true
-		hide()
-		get_viewport().set_input_as_handled()
+func _on_close_button_pressed() -> void:
+	_dismissed = true
+	hide()
 
 func set_character(character: Character) -> void:
 	if character == null:
