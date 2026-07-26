@@ -77,10 +77,12 @@ func begin_transition(type = "default"):
 			$AnimationPlayer.play("slide")
 
 		"outro":
-			%Title.text = "Outro"
+			%Title.text = "Time's up !!!"
 			%Title.show()
 			%Image.texture=load("res://assets/graphics/clocks/clock_16.png")
 			%Image.show()
+			%Subtitle.text = " H - 0 "
+			%Subtitle.show()
 			$AnimationPlayer.play("slide")
 
 		"epilogue":
