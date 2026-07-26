@@ -1,581 +1,581 @@
 {
-	"metadata": {
-		"chara_list": [
-			"Fred",
-			"Player",
-			"Annabelle",
-			"Sarah",
+    "metadata": {
+        "chara_list": [
+            "Fred",
+            "Player",
+            "Annabelle",
+            "Sarah",
             "Boss"
-		]
-	},
-	"start": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": null,
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Where the hell is the XPS-12 I swear it was there yesterday, or even this morning…",
-			"audio": "s1r001.mp3"
-		},
-		"next": "line_1"
-	},
-	"line_1": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i](I had just arrived back from my break.) *What a stressful day this was going to be!*[/i]",
-			"audio": null
-		},
-		"next": "line_2"
-	},
-	"line_2": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i](As always, Annabelle had already started driving everyone for the day, her voice resonating across the stage we were building.)[/i]",
-			"audio": null
-		},
-		"next": "line_3"
-	},
-	"line_3": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hophophop, this is the last day! I want everyone cool calm collected, ok This is the last push.",
-			"audio": "s1r004.mp3"
-		},
-		"next": "line_4"
-	},
-	"line_4": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Sarah, did you take care of the loose plank stage left?",
-			"audio": "s1r005.mp3"
-		},
-		"next": "line_5"
-	},
-	"line_5": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Yes, Anna, all taken care of! Shouldn't be a problem.",
-			"audio": "s1r006.mp3"
-		},
-		"next": "line_6"
-	},
-	"line_6": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Shouldn’t, or isn’t?",
-			"audio": "s1r007.mp3"
-		},
-		"next": "line_7"
-	},
-	"line_7": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i](Sighs.)[/i] Isn’t, Fred. Isn’t.",
-			"audio": "s1r008.mp3"
-		},
-		"next": "line_8"
-	},
-	"line_8": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Aren’t you busy looking for that C3PO anyways?",
-			"audio": "s1r009.mp3"
-		},
-		"next": "line_9"
-	},
-	"line_9": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "XPS-12! It’s called XPS-12. You should know that already. How the hell am I supposed to adapt to 110V when the commutator is tuned to 60Hz and the…",
-			"audio": "s1r010.mp3"
-		},
-		"next": "line_10"
-	},
-	"line_10": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Screw you! You know nobody but you gives a damn about that…",
-			"audio": "s1r011.mp3"
-		},
-		"next": "line_11"
-	},
-	"line_11": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Enough, the both of you! We don’t have time for this. Plus, you’re scaring the new kid!",
-			"audio": "s1r012.mp3"
-		},
-		"next": "line_12"
-	},
-	"line_12": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "I might be young, but i ain’t no kid! I know my stuff!",
-			"audio": null
-		},
-		"next": "line_13"
-	},
-	"line_13": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I know, I know. You’re not a kid.",
-			"audio": "s1r014.mp3"
-		},
-		"next": "line_14"
-	},
-	"line_14": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Have YOU seen it, by the way? I swear it was right there yesterday.",
-			"audio": "s1r015.mp3"
-		},
-		"next": "line_15"
-	},
-	"line_15": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i](He turns to you saying this.)[/i] Hum, no, I don’t think…",
-			"audio": null
-		},
-		"next": "line_16"
-	},
-	"line_16": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "We don’t know where your stupid cable is, ok? Nobody touches lights except you. Go and find it yourself, mister expert!",
-			"audio": "s1r017.mp3"
-		},
-		"next": "line_17"
-	},
-	"line_17": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "[i](Under his breath.)[/i] Mister expert, mister expert. I’ll show you, mister…",
-			"audio": "s1r018.mp3"
-		},
-		"next": "line_18"
-	},
-	"line_18": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "[i](Grizzle noise.)[/i] Attention please! Everyone. Boss speaking.",
-			"audio": "s1r019.mp3"
-		},
-		"next": "line_19"
-	},
-	"line_19": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Due to unforeseen and mysterious circumstances, that will not be elaborated on, the planning has been reshuffled.",
-			"audio": "s1r020.mp3"
-		},
-		"next": "line_20"
-	},
-	"line_20": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "You have to get all of the stage ready before 4 pm. It means you have 6 hours to do the job.",
-			"audio": "s1r021.mp3"
-		},
-		"next": "line_21"
-	},
-	"line_21": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "No overtime allowed.",
-			"audio": "s1r022.mp3"
-		},
-		"next": "line_22"
-	},
-	"line_22": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "What the hell? We were supposed to have until 10 to finish!",
-			"audio": "s1r023.mp3"
-		},
-		"next": "line_23"
-	},
-	"line_23": {
-		"type": "line",
-		"left": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]*She tensed up saying this. She looked surprised, but quickly regained her composure listening to the rest of the message.*[/i]",
-			"audio": null
-		},
-		"next": "line_24"
-	},
-	"line_24": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "The success of the festival depends on this. Accordingly, if the stage isn’t ready in time, i’ll be docking your pays and looking for a more competent team for the rest of the season.",
-			"audio": "s1r025.mp3"
-		},
-		"next": "line_25"
-	},
-	"line_25": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]*Damn! I’ll have to skip post-lunch nap…*[/i]",
-			"audio": null
-		},
-		"next": "line_26"
-	},
-	"line_26": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Oh… [i](Softly, so as not to be heard.)[/i] God damnit. How are we going to make it in time? [i](Louder, to everyone.)[/i] OK les amis, now we really have to stick together! Serrer les coudes!",
-			"audio": "s1r027.mp3"
-		},
-		"next": "line_27"
-	},
-	"line_27": {
-		"type": "line",
-		"left": {
-			"chara": "Boss",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "irritated",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Zut! Does he really have no respect for us?",
-			"audio": "s1r028.mp3"
-		},
-		"next": "line_28"
-	},
-	"line_28": {
-		"type": "line",
-		"left": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Sarah",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "[i](Everyone gets back to work, hastily.)[/i]",
-			"audio": null
-		},
-		"next": "line_29"
-	},
-	"line_29": {
-		"type": "line",
-		"left": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Anyways. You! Come with me. Your planning puts you to help me now, and we don’t have time to spare! Allons-y!",
-			"audio": "s1r030.mp3"
-		},
-		"next": "end"
-	}
+        ]
+    },
+    "start": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": null,
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Where the hell is the XPS-12 I swear it was there yesterday, or even this morning…",
+            "audio": "s1r001.mp3"
+        },
+        "next": "line_1"
+    },
+    "line_1": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i](I had just arrived back from my break.) *What a stressful day this was going to be!*[/i]",
+            "audio": null
+        },
+        "next": "line_2"
+    },
+    "line_2": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i](As always, Annabelle had already started driving everyone for the day, her voice resonating across the stage we were building.)[/i]",
+            "audio": null
+        },
+        "next": "line_3"
+    },
+    "line_3": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hophophop, this is the last day! I want everyone cool calm collected, ok? This is the last push.",
+            "audio": "s1r004.mp3"
+        },
+        "next": "line_4"
+    },
+    "line_4": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Sarah, did you take care of the loose plank stage left?",
+            "audio": "s1r005.mp3"
+        },
+        "next": "line_5"
+    },
+    "line_5": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yes, Anna, all taken care of! Shouldn't be a problem.",
+            "audio": "s1r006.mp3"
+        },
+        "next": "line_6"
+    },
+    "line_6": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Shouldn’t, or isn’t?",
+            "audio": "s1r007.mp3"
+        },
+        "next": "line_7"
+    },
+    "line_7": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i](Sighs.)[/i] Isn’t, Fred. Isn’t.",
+            "audio": "s1r008.mp3"
+        },
+        "next": "line_8"
+    },
+    "line_8": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Aren’t you busy looking for that C3PO anyways?",
+            "audio": "s1r009.mp3"
+        },
+        "next": "line_9"
+    },
+    "line_9": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "XPS-12! It’s called XPS-12. You should know that already. How the hell am I supposed to adapt to 110V when the commutator is tuned to 60Hz and the…",
+            "audio": "s1r010.mp3"
+        },
+        "next": "line_10"
+    },
+    "line_10": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Screw you! You know nobody but you gives a damn about that…",
+            "audio": "s1r011.mp3"
+        },
+        "next": "line_11"
+    },
+    "line_11": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Enough, the both of you! We don’t have time for this. Plus, you’re scaring the new kid!",
+            "audio": "s1r012.mp3"
+        },
+        "next": "line_12"
+    },
+    "line_12": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "I might be young, but i ain’t no kid! I know my stuff!",
+            "audio": null
+        },
+        "next": "line_13"
+    },
+    "line_13": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I know, I know. You’re not a kid.",
+            "audio": "s1r014.mp3"
+        },
+        "next": "line_14"
+    },
+    "line_14": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Have YOU seen it, by the way? I swear it was right there yesterday.",
+            "audio": "s1r015.mp3"
+        },
+        "next": "line_15"
+    },
+    "line_15": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i](He turns to you saying this.)[/i] Hum, no, I don’t think…",
+            "audio": null
+        },
+        "next": "line_16"
+    },
+    "line_16": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "We don’t know where your stupid cable is, ok? Nobody touches lights except you. Go and find it yourself, mister expert!",
+            "audio": "s1r017.mp3"
+        },
+        "next": "line_17"
+    },
+    "line_17": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i](Under his breath.)[/i] Mister expert, mister expert. I’ll show you, mister…",
+            "audio": "s1r018.mp3"
+        },
+        "next": "line_18"
+    },
+    "line_18": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i](Grizzle noise.)[/i] Attention please! Everyone. Boss speaking.",
+            "audio": "s1r019.mp3"
+        },
+        "next": "line_19"
+    },
+    "line_19": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Due to unforeseen and mysterious circumstances, that will not be elaborated on, the planning has been reshuffled.",
+            "audio": "s1r020.mp3"
+        },
+        "next": "line_20"
+    },
+    "line_20": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "You have to get all of the stage ready before 4 pm. It means you have 6 hours to do the job.",
+            "audio": "s1r021.mp3"
+        },
+        "next": "line_21"
+    },
+    "line_21": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "No overtime allowed.",
+            "audio": "s1r022.mp3"
+        },
+        "next": "line_22"
+    },
+    "line_22": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "What the hell? We were supposed to have until 10 to finish!",
+            "audio": "s1r023.mp3"
+        },
+        "next": "line_23"
+    },
+    "line_23": {
+        "type": "line",
+        "left": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i]*She tensed up saying this. She looked surprised, but quickly regained her composure listening to the rest of the message.*[/i]",
+            "audio": null
+        },
+        "next": "line_24"
+    },
+    "line_24": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "The success of the festival depends on this. Accordingly, if the stage isn’t ready in time, i’ll be docking your pays and looking for a more competent team for the rest of the season.",
+            "audio": "s1r025.mp3"
+        },
+        "next": "line_25"
+    },
+    "line_25": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]*Damn! I’ll have to skip post-lunch nap…*[/i]",
+            "audio": null
+        },
+        "next": "line_26"
+    },
+    "line_26": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Oh… [i](Softly, so as not to be heard.)[/i] God damnit. How are we going to make it in time? [i](Louder, to everyone.)[/i] OK les amis, now we really have to stick together! Serrer les coudes!",
+            "audio": "s1r027.mp3"
+        },
+        "next": "line_27"
+    },
+    "line_27": {
+        "type": "line",
+        "left": {
+            "chara": "Boss",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "irritated",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Zut! Does he really have no respect for us?",
+            "audio": "s1r028.mp3"
+        },
+        "next": "line_28"
+    },
+    "line_28": {
+        "type": "line",
+        "left": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Sarah",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i](Everyone gets back to work, hastily.)[/i]",
+            "audio": null
+        },
+        "next": "line_29"
+    },
+    "line_29": {
+        "type": "line",
+        "left": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Anyways. You! Come with me. Your planning puts you to help me now, and we don’t have time to spare! Allons-y!",
+            "audio": "s1r030.mp3"
+        },
+        "next": "end"
+    }
 }

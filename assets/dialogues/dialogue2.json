@@ -1,526 +1,526 @@
 {
-	"metadata": {
-		"chara_list": [
-			"Annabelle",
+    "metadata": {
+        "chara_list": [
+            "Annabelle",
             "Player"
-		]
-	},
-	"start": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Allez, au turbin! So, I need some help building this shelf to stock all the different guitars, bass, and everything they need on stage.",
-			"audio": "s2r031.mp3"
-		},
-		"next": "line_1"
-	},
-	"line_1": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Pass me the screwdriver",
-			"audio": "s2r032.mp3"
-		},
-		"next": "line_2"
-	},
-	"line_2": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You pass the screwdriver. As she sits down, you notice a slight flinch.[/i]",
-			"audio": null
-		},
-		"next": "line_3"
-	},
-	"line_3": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "You know, the boss, I mean…",
-			"audio": "s2r034.mp3"
-		},
-		"next": "line_4"
-	},
-	"line_4": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Other screwdriver. The one with yellow tape.",
-			"audio": "s2r035.mp3"
-		},
-		"next": "line_5"
-	},
-	"line_5": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You sit there, amazed watching her work. She clearly knows what she’s doing, and has done it many times before.[/i]",
-			"audio": null
-		},
-		"next": "line_6"
-	},
-	"line_6": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Yeah… He doesn’t mean harm on us, the boss. It’s just… how it is. You know",
-			"audio": "s2r037.mp3"
-		},
-		"next": "line_7"
-	},
-	"line_7": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She keeps working. She flinches again, putting some weight to tighten the last screw.[/i]",
-			"audio": null
-		},
-		"next": "line_8"
-	},
-	"line_8": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Back in the day, surely, it was different. Look…",
-			"audio": "s2r039.mp3"
-		},
-		"next": "line_9"
-	},
-	"line_9": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I would lie if I said things have always been this way. I remember when we were at the Pile de Bois festival. Sure, it was stressful, but there wasn’t…",
-			"audio": "s2r040.mp3"
-		},
-		"next": "line_10"
-	},
-	"line_10": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "All this money involved. I feel like there’s more and more pressure.",
-			"audio": "s2r041.mp3"
-		},
-		"next": "line_11"
-	},
-	"line_11": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I’m close to retirement anyways, and you know… Show must go on. But…",
-			"audio": "s2r042.mp3"
-		},
-		"next": "line_12"
-	},
-	"line_12": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She pauses. She seems like she’s hesitating to say something.[/i]",
-			"audio": null
-		},
-		"next": "line_13"
-	},
-	"line_13": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I’m just worried. For the kids, you know Sarah, Fred, yourself. I just don’t recognize the job that I started doing 40-so years ago.",
-			"audio": "s2r044.mp3"
-		},
-		"next": "line_14"
-	},
-	"line_14": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She looks sad. Nostalgic.[/i]",
-			"audio": null
-		},
-		"next": "line_15"
-	},
-	"line_15": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hey, why do you look at me like that? Do I look that old? [i]She laughs. [/i]Although,I could be your mom!",
-			"audio": "s2r046.mp3"
-		},
-		"next": "line_16"
-	},
-	"line_16": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She stands back up with a grunt, the shelf finished.[/i]",
-			"audio": null
-		},
-		"next": "line_17"
-	},
-	"line_17": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "[i]Ooffffff.[/i] Ok, my back is acting up. Now you organize this. I’ll guide you through it.",
-			"audio": "s2r048.mp3"
-		},
-		"next": "puzzle1"
-	},
-	"puzzle1": {
-		"type": "puzzle",
-		"chara": "Annabelle",
-		"next": "line_18"
-	},
-	"line_18": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Thanks a lot. Learn by doing! C’est en forgeant qu’on devient forgeron.",
-			"audio": "s2r049.mp3"
-		},
-		"next": "line_19"
-	},
-	"line_19": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Thanks for guiding me.",
-			"audio": null
-		},
-		"next": "line_20"
-	},
-	"line_20": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "No problem.",
-			"audio": "s2r051.mp3"
-		},
-		"next": "line_21"
-	},
-	"line_21": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Anyways, you better hurry up now, Fred is waiting for you.",
-			"audio": "s2r052.mp3"
-		},
-		"next": "line_22"
-	},
-	"line_22": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You make a face. You seem scared by the idea of working with him.[/i]",
-			"audio": null
-		},
-		"next": "line_23"
-	},
-	"line_23": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "warm",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Tranquille, chill out! Fred is a nice guy once you get to know him. He just doesn’t have a way with words.",
-			"audio": "s2r054.mp3"
-		},
-		"next": "line_24"
-	},
-	"line_24": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]She glances at him. [/i]",
-			"audio": null
-		},
-		"next": "line_25"
-	},
-	"line_25": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "He has a way with cables.",
-			"audio": "s2r056.mp3"
-		},
-		"next": "line_26"
-	},
-	"line_26": {
-		"type": "line",
-		"left": {
-			"chara": "Annabelle",
-			"mood": "concerned",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Hey, don’t tell the others what I told you, okay I don’t want to worry them even more. They’ve got enough on their plates already.",
-			"audio": "s2r057.mp3"
-		},
-		"next": "end"
-	}
+        ]
+    },
+    "start": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Allez, au turbin! So, I need some help building this shelf to stock all the different guitars, basses, and everything they need on stage.",
+            "audio": "s2r031.mp3"
+        },
+        "next": "line_1"
+    },
+    "line_1": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Pass me the screwdriver?",
+            "audio": "s2r032.mp3"
+        },
+        "next": "line_2"
+    },
+    "line_2": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You pass the screwdriver. As she sits down, you notice a slight flinch.[/i]",
+            "audio": null
+        },
+        "next": "line_3"
+    },
+    "line_3": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "You know, the boss, I mean…",
+            "audio": "s2r034.mp3"
+        },
+        "next": "line_4"
+    },
+    "line_4": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "No, other screwdriver. The one with yellow tape.",
+            "audio": "s2r035.mp3"
+        },
+        "next": "line_5"
+    },
+    "line_5": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You sit there, amazed watching her work. She clearly knows what she’s doing, and has done it many times before.[/i]",
+            "audio": null
+        },
+        "next": "line_6"
+    },
+    "line_6": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Yeah… He doesn’t mean harm on us, the boss. It’s just… how it is. You know?",
+            "audio": "s2r037.mp3"
+        },
+        "next": "line_7"
+    },
+    "line_7": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She keeps working. She flinches again, putting some weight to tighten the last screw.[/i]",
+            "audio": null
+        },
+        "next": "line_8"
+    },
+    "line_8": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Back in the day, surely, it was different. Look…",
+            "audio": "s2r039.mp3"
+        },
+        "next": "line_9"
+    },
+    "line_9": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I would lie if I said things have always been this way. I remember when we were at the Pile de Bois festival. Sure, it was stressful, but there wasn’t…",
+            "audio": "s2r040.mp3"
+        },
+        "next": "line_10"
+    },
+    "line_10": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "All this money involved. I feel like there’s juste more and more pressure.",
+            "audio": "s2r041.mp3"
+        },
+        "next": "line_11"
+    },
+    "line_11": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I’m close to retirement anyways, and you know… Show must go on. But…",
+            "audio": "s2r042.mp3"
+        },
+        "next": "line_12"
+    },
+    "line_12": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She pauses. She seems like she’s hesitating to say something.[/i]",
+            "audio": null
+        },
+        "next": "line_13"
+    },
+    "line_13": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I’m just worried. For the kids, you know Sarah, Fred, yourself. I just don’t recognize the job that I started doing 40-so years ago.",
+            "audio": "s2r044.mp3"
+        },
+        "next": "line_14"
+    },
+    "line_14": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She looks sad. Nostalgic.[/i]",
+            "audio": null
+        },
+        "next": "line_15"
+    },
+    "line_15": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hey, why do you look at me like that? Do I look that old? [i]She laughs. [/i]Although,I could be your mom!",
+            "audio": "s2r046.mp3"
+        },
+        "next": "line_16"
+    },
+    "line_16": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She stands back up with a grunt, the shelf finished.[/i]",
+            "audio": null
+        },
+        "next": "line_17"
+    },
+    "line_17": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "[i]Ooffffff.[/i] Ok, my back is acting up. Now you organize this. I’ll guide you through it.",
+            "audio": "s2r048.mp3"
+        },
+        "next": "puzzle1"
+    },
+    "puzzle1": {
+        "type": "puzzle",
+        "chara": "Annabelle",
+        "next": "line_18"
+    },
+    "line_18": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Thanks a lot. Learn by doing! C’est en forgeant qu’on devient forgeron.",
+            "audio": "s2r049.mp3"
+        },
+        "next": "line_19"
+    },
+    "line_19": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Thanks for guiding me.",
+            "audio": null
+        },
+        "next": "line_20"
+    },
+    "line_20": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "No problem.",
+            "audio": "s2r051.mp3"
+        },
+        "next": "line_21"
+    },
+    "line_21": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Anyways, you better hurry up now, Fred is waiting for you.",
+            "audio": "s2r052.mp3"
+        },
+        "next": "line_22"
+    },
+    "line_22": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You make a face. You seem scared by the idea of working with him.[/i]",
+            "audio": null
+        },
+        "next": "line_23"
+    },
+    "line_23": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "warm",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Tranquille, chill out! Fred is a nice guy once you get to know him. He just doesn’t have a way with words.",
+            "audio": "s2r054.mp3"
+        },
+        "next": "line_24"
+    },
+    "line_24": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]She glances at him. [/i]",
+            "audio": null
+        },
+        "next": "line_25"
+    },
+    "line_25": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "He has a way with cables.",
+            "audio": "s2r056.mp3"
+        },
+        "next": "line_26"
+    },
+    "line_26": {
+        "type": "line",
+        "left": {
+            "chara": "Annabelle",
+            "mood": "concerned",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Hey, don’t tell the others what I told you, okay? I don’t want to worry them even more. They’ve got enough on their plates already.",
+            "audio": "s2r057.mp3"
+        },
+        "next": "end"
+    }
 }

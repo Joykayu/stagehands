@@ -1,659 +1,659 @@
 {
-	"metadata": {
-		"chara_list": [
-			"Player",
+    "metadata": {
+        "chara_list": [
+            "Player",
             "Fred"
-		]
-	},
-	"start": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You approach Fred like you would a wild animal. He seems absorbed in his work, rummaging through a pile of cables.[/i]",
-			"audio": null
-		},
-		"next": "line_1"
-	},
-	"line_1": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ah, mais bordel! Where the hell is that XT60?",
-			"audio": "s3r059.mp3"
-		},
-		"next": "line_2"
-	},
-	"line_2": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "He keeps looking, not noticing you arrived.",
-			"audio": null
-		},
-		"next": "line_3"
-	},
-	"line_3": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ahhh, here it is! Now, the female one…",
-			"audio": "s3r061.mp3"
-		},
-		"next": "line_4"
-	},
-	"line_4": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You cough.[/i]",
-			"audio": null
-		},
-		"next": "line_5"
-	},
-	"line_5": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ah, yes, sorry! Annabelle sent you, right?",
-			"audio": "s3r063.mp3"
-		},
-		"next": "line_6"
-	},
-	"line_6": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Yes, she told me…",
-			"audio": null
-		},
-		"next": "line_7"
-	},
-	"line_7": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Yes, perfect because we need to set up the XT60 connections to jack up together the lights connection. There’s 6 light switches in parallel. Well, actually, they are on 3 different amps, so it’s not really in parallel, but I just say it because it works the same. In fact, if it was only on one, we would only have half the power, hahaha. Can you imagine Running 6 50W on one single alternator? This would be like.. Plugging two XP12’s in series without a commutator!",
-			"audio": "s3r065.mp3"
-		},
-		"next": "line_8"
-	},
-	"line_8": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Hum, yes. So, about that help you need.",
-			"audio": null
-		},
-		"next": "line_9"
-	},
-	"line_9": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Yes, yes, bien sûr! So, I'll make it simple for you. There are 5 AP-54 jumpers connected to a single trenchline that runs from the jackswitch to the mic plugs. We just need to reroute the current switch so that we never run out of bandwidth. Got it?",
-			"audio": "s3r067.mp3"
-		},
-		"next": "line_10"
-	},
-	"line_10": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Hum…",
-			"audio": null
-		},
-		"next": "line_11"
-	},
-	"line_11": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Okay. I’ll make it reeeeeeal simple for you.",
-			"audio": "s3r069.mp3"
-		},
-		"next": "line_12"
-	},
-	"line_12": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]He just wants me to plug these cables together, right?[/i]",
-			"audio": null
-		},
-		"next": "puzzle2"
-	},
-	"puzzle2": {
-		"type": "puzzle",
-		"chara": "Fred",
-		"next": "line_13"
-	},
-	"line_13": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Thanks! That would have been a mess to do alone.",
-			"audio": "s3r071.mp3"
-		},
-		"next": "line_14"
-	},
-	"line_14": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]He seems actually surprised that you managed to help him.[/i][i] He opens a can of soda, and takes a sip.[/i]",
-			"audio": null
-		},
-		"next": "line_15"
-	},
-	"line_15": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ahh, nice. You want a sip? No? Anyways. Who are you with after this?",
-			"audio": "s3r073.mp3"
-		},
-		"next": "line_16"
-	},
-	"line_16": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "I have to help Sarah to quoicoubeh.",
-			"audio": null
-		},
-		"next": "line_17"
-	},
-	"line_17": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "pleased",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Ah, Sarah! Good luck with that.. Hopefully you wont get the full speech about why we do this and all that nonsense.",
-			"audio": "s3r075.mp3"
-		},
-		"next": "line_18"
-	},
-	"line_18": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You stay silent.[/i]",
-			"audio": null
-		},
-		"next": "line_19"
-	},
-	"line_19": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "I mean…",
-			"audio": "s3r077.mp3"
-		},
-		"next": "line_20"
-	},
-	"line_20": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "…",
-			"audio": null
-		},
-		"next": "line_21"
-	},
-	"line_21": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "It’s not that she’s wrong. I get what she means. But, like, definitely we don’t have the same priorities.",
-			"audio": "s3r079.mp3"
-		},
-		"next": "line_22"
-	},
-	"line_22": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Like me, I do this because I like it, tu vois? I don’t really have an opinion. I show up, I do my job, I like it, I get paid. I don’t see what’s there to think about.",
-			"audio": "s3r080.mp3"
-		},
-		"next": "line_23"
-	},
-	"line_23": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "The boss, he can threaten me, I don't care so much. In the end i’ll find another place where I can work on lights, on sound, and it will be the same for me.",
-			"audio": "s3r081.mp3"
-		},
-		"next": "line_24"
-	},
-	"line_24": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]You nod. He’s obviously the lone wolf type.[/i]",
-			"audio": null
-		},
-		"next": "line_25"
-	},
-	"line_25": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Sarah, she worries too much about this. She stirs stuff up. Me, I don’t make waves. And in the end I'm happier for it. I don’t know. Maybe I’m wrong. Whatever.",
-			"audio": "s3r083.mp3"
-		},
-		"next": "line_26"
-	},
-	"line_26": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "She is strong and resourceful, I'll give her that.",
-			"audio": "s3r084.mp3"
-		},
-		"next": "line_27"
-	},
-	"line_27": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Do you feel that way with everyone you work with?",
-			"audio": null
-		},
-		"next": "line_28"
-	},
-	"line_28": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "No. Annabelle, though, she’s cool. You know she was there in the 60s? the golden era?",
-			"audio": "s3r086.mp3"
-		},
-		"next": "line_29"
-	},
-	"line_29": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Yes, I’ve heard that.",
-			"audio": null
-		},
-		"next": "line_30"
-	},
-	"line_30": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "That was a cool time. No ressources, just plain technical know-how, passionate people connecting through music. I mean, I wasn’t there. But it sounds cool, doesn’t it?",
-			"audio": "s3r088.mp3"
-		},
-		"next": "line_31"
-	},
-	"line_31": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "Sure does!",
-			"audio": null
-		},
-		"next": "line_32"
-	},
-	"line_32": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "neutral",
-			"focus": false
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": true
-		},
-		"line": {
-			"speaker": "right",
-			"text": "[i]Not so lone wolf after all.[/i]",
-			"audio": null
-		},
-		"next": "line_33"
-	},
-	"line_33": {
-		"type": "line",
-		"left": {
-			"chara": "Fred",
-			"mood": "annoyed",
-			"focus": true
-		},
-		"right": {
-			"chara": "Player",
-			"mood": "neutral",
-			"focus": false
-		},
-		"line": {
-			"speaker": "left",
-			"text": "Anyways, you should probably get going. [i]Laughingly[/i]. You don’t want to get on Sarah’s bad side, like me!",
-			"audio": "s3r091.mp3"
-		},
-		"next": "end"
-	}
+        ]
+    },
+    "start": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You approach Fred like you would a wild animal. He seems absorbed in his work, rummaging through a pile of cables.[/i]",
+            "audio": null
+        },
+        "next": "line_1"
+    },
+    "line_1": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ah, mais bordel! Where the hell is that XT60?",
+            "audio": "s3r059.mp3"
+        },
+        "next": "line_2"
+    },
+    "line_2": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "He keeps looking, not noticing you arrived.",
+            "audio": null
+        },
+        "next": "line_3"
+    },
+    "line_3": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ahhh, here it is! Now, the female one…",
+            "audio": "s3r061.mp3"
+        },
+        "next": "line_4"
+    },
+    "line_4": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You cough.[/i]",
+            "audio": null
+        },
+        "next": "line_5"
+    },
+    "line_5": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ah, yes, sorry! Annabelle sent you, right?",
+            "audio": "s3r063.mp3"
+        },
+        "next": "line_6"
+    },
+    "line_6": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yes, she told me…",
+            "audio": null
+        },
+        "next": "line_7"
+    },
+    "line_7": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Yes, perfect because we need to set up the XT60 connections to jack up together the lights connection. There’s 6 light switches in parallel. Well, actually, they are on 3 different amps, so it’s not really in parallel, but I just say it because it works the same. In fact, if it was only on one, we would only have half the power, hahaha. Can you imagine Running 6 50W on one single alternator? This would be like.. Plugging two XP12’s in series without a commutator!",
+            "audio": "s3r065.mp3"
+        },
+        "next": "line_8"
+    },
+    "line_8": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Hum, yes. So, about that help you need.",
+            "audio": null
+        },
+        "next": "line_9"
+    },
+    "line_9": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Yes, yes, bien sûr! So, I'll make it simple for you. There are 5 AP-54 jumpers connected to a single trenchline that runs from the jackswitch to the mic plugs. We just need to reroute the current switch so that we never run out of bandwidth. Got it?",
+            "audio": "s3r067.mp3"
+        },
+        "next": "line_10"
+    },
+    "line_10": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Hum…",
+            "audio": null
+        },
+        "next": "line_11"
+    },
+    "line_11": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Okay. I’ll make it reeeeeeal simple for you.",
+            "audio": "s3r069.mp3"
+        },
+        "next": "line_12"
+    },
+    "line_12": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]He just wants me to plug these cables together, right?[/i]",
+            "audio": null
+        },
+        "next": "puzzle2"
+    },
+    "puzzle2": {
+        "type": "puzzle",
+        "chara": "Fred",
+        "next": "line_13"
+    },
+    "line_13": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Thanks! That would have been a mess to do alone.",
+            "audio": "s3r071.mp3"
+        },
+        "next": "line_14"
+    },
+    "line_14": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]He seems actually surprised that you managed to help him.[/i][i] He opens a can of soda, and takes a sip.[/i]",
+            "audio": null
+        },
+        "next": "line_15"
+    },
+    "line_15": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ahh, nice. You want a sip? No? Anyways. Who are you with after this?",
+            "audio": "s3r073.mp3"
+        },
+        "next": "line_16"
+    },
+    "line_16": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "I have to help Sarah to quoicoubeh.",
+            "audio": null
+        },
+        "next": "line_17"
+    },
+    "line_17": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "pleased",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Ah, Sarah! Good luck with that.. Hopefully you wont get the full speech about why we do this and all that nonsense.",
+            "audio": "s3r075.mp3"
+        },
+        "next": "line_18"
+    },
+    "line_18": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You stay silent.[/i]",
+            "audio": null
+        },
+        "next": "line_19"
+    },
+    "line_19": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "I mean…",
+            "audio": "s3r077.mp3"
+        },
+        "next": "line_20"
+    },
+    "line_20": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "…",
+            "audio": null
+        },
+        "next": "line_21"
+    },
+    "line_21": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "It’s not that she’s wrong. I get what she means. But, like, definitely we don’t have the same priorities.",
+            "audio": "s3r079.mp3"
+        },
+        "next": "line_22"
+    },
+    "line_22": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Like me, I do this because I like it, tu vois? I don’t really have an opinion. I just show up, I do my job, I like it, I get paid. I don’t see what’s there to think about.",
+            "audio": "s3r080.mp3"
+        },
+        "next": "line_23"
+    },
+    "line_23": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "The boss, he can threaten me, I don't care so much. In the end i’ll find another place where I can work on lights, on sound, and it will be the same for me.",
+            "audio": "s3r081.mp3"
+        },
+        "next": "line_24"
+    },
+    "line_24": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]You nod. He’s obviously the lone wolf type.[/i]",
+            "audio": null
+        },
+        "next": "line_25"
+    },
+    "line_25": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Sarah, she worries too much about this. She stirs stuff up. Me, I don’t make waves. And in the end I'm happier for it. I don’t know. Maybe I’m wrong. Whatever.",
+            "audio": "s3r083.mp3"
+        },
+        "next": "line_26"
+    },
+    "line_26": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "She is strong and resourceful, I'll give her that.",
+            "audio": "s3r084.mp3"
+        },
+        "next": "line_27"
+    },
+    "line_27": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Do you feel that way with everyone you work with?",
+            "audio": null
+        },
+        "next": "line_28"
+    },
+    "line_28": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "No. Annabelle, though, she’s cool. You know she was there in the 60s? The golden era?",
+            "audio": "s3r086.mp3"
+        },
+        "next": "line_29"
+    },
+    "line_29": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Yes, I’ve heard that.",
+            "audio": null
+        },
+        "next": "line_30"
+    },
+    "line_30": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "That was a cool time. No ressources, just plain technical know-how, passionate people connecting through music. I mean, I wasn’t there. But it sounds cool, doesn’t it?",
+            "audio": "s3r088.mp3"
+        },
+        "next": "line_31"
+    },
+    "line_31": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "Sure does!",
+            "audio": null
+        },
+        "next": "line_32"
+    },
+    "line_32": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "neutral",
+            "focus": false
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": true
+        },
+        "line": {
+            "speaker": "right",
+            "text": "[i]Not so lone wolf after all.[/i]",
+            "audio": null
+        },
+        "next": "line_33"
+    },
+    "line_33": {
+        "type": "line",
+        "left": {
+            "chara": "Fred",
+            "mood": "annoyed",
+            "focus": true
+        },
+        "right": {
+            "chara": "Player",
+            "mood": "neutral",
+            "focus": false
+        },
+        "line": {
+            "speaker": "left",
+            "text": "Anyways, you should probably get going. [i]Laughingly[/i]. You don’t want to get on Sarah’s bad side, like me!",
+            "audio": "s3r091.mp3"
+        },
+        "next": "end"
+    }
 }

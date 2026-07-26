@@ -37,8 +37,8 @@ func _process(delta):
 func _input(event):
 	if !is_active:
 		return
-	#if event is InputEventMouseButton and event.button_index == 1 and event.is_pressed():
-	if event is InputEventMouseButton  and event.is_pressed():
+	if event is InputEventMouseButton and event.button_index == 1 and event.is_pressed():
+	#if event is InputEventMouseButton  and event.is_pressed():
 		stop_voice()
 		if end_dialogue :
 			get_parent().next_transition("dialogue")
