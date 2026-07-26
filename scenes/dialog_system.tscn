@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b2bj4jef17ojp" path="res://assets/graphics/dialog_box.png" id="5_skqg8"]
 [ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="6_skqg8"]
 
-[node name="DialogSystem" type="Node" unique_id=617765245]
+[node name="DialogSystem" type="Node" unique_id=226354550]
 script = ExtResource("1_o7dfd")
 source = "res://assets/dialogues/dialogue1.json"
 

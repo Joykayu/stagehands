@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://qadfjmmssayt" path="res://scripts/main.gd" id="1_tipki"]
 [ext_resource type="PackedScene" uid="uid://cactkkqw0rhb8" path="res://scenes/dialog_system.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dvdor61hem3er" path="res://scenes/menu.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://iflsnxlj0a57" path="res://scenes/puzzle_placeholder.tscn" id="4_jyhfs"]
+[ext_resource type="Script" uid="uid://c36fgeumi07cs" path="res://scripts/puzzle_system.gd" id="4_jyhfs"]
 
 [node name="Main" type="Node" unique_id=290267783]
 script = ExtResource("1_tipki")
@@ -12,5 +12,5 @@ script = ExtResource("1_tipki")
 
 [node name="Menu" parent="." unique_id=1325774211 instance=ExtResource("3_sugp2")]
 
-[node name="PuzzlePlaceholder" parent="." unique_id=1430073632 instance=ExtResource("4_jyhfs")]
-visible = false
+[node name="PuzzleSystem" type="Node" parent="." unique_id=324018240]
+script = ExtResource("4_jyhfs")

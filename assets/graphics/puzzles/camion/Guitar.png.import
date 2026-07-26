@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drrgjkow2chv"
-path="res://.godot/imported/puzzle-truck.png-2f46d1acb955eb63464da781e96e3513.ctex"
+uid="uid://dq6w0lfukfe63"
+path="res://.godot/imported/Guitar.png-4f4dc71dd1f50a613a64563ab0e1c864.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/puzzle-truck.png"
-dest_files=["res://.godot/imported/puzzle-truck.png-2f46d1acb955eb63464da781e96e3513.ctex"]
+source_file="res://assets/graphics/puzzles/camion/Guitar.png"
+dest_files=["res://.godot/imported/Guitar.png-4f4dc71dd1f50a613a64563ab0e1c864.ctex"]
 
 [params]
 
