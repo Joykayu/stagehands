@@ -38,8 +38,6 @@ var transitions_list = [
 	"puzzle3",
 	"outro",
 	"epilogue",
-	"default",
-	"default",
 	"end"
 ]
 
