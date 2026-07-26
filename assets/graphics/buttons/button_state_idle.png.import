@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cicxygpdvwull"
-path="res://.godot/imported/sarah.png-4091e9497486bdde48c6709e148ad1a5.ctex"
+uid="uid://bdcrncjusrk62"
+path="res://.godot/imported/button_state_idle.png-9bc75ec0f704e60f0b43047825c1a7c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/sarah.png"
-dest_files=["res://.godot/imported/sarah.png-4091e9497486bdde48c6709e148ad1a5.ctex"]
+source_file="res://assets/graphics/buttons/button_state_idle.png"
+dest_files=["res://.godot/imported/button_state_idle.png-9bc75ec0f704e60f0b43047825c1a7c7.ctex"]
 
 [params]
 

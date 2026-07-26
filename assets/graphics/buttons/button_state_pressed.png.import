@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdwug722va551"
-path="res://.godot/imported/fred.png-367e19b6d264f9f19803b88b99c73833.ctex"
+uid="uid://dmpcrnfbek4m0"
+path="res://.godot/imported/button_state_pressed.png-56b922b4963d92ba3cd8985f7ad34401.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/fred.png"
-dest_files=["res://.godot/imported/fred.png-367e19b6d264f9f19803b88b99c73833.ctex"]
+source_file="res://assets/graphics/buttons/button_state_pressed.png"
+dest_files=["res://.godot/imported/button_state_pressed.png-56b922b4963d92ba3cd8985f7ad34401.ctex"]
 
 [params]
 
