@@ -117,16 +117,16 @@ func set_chara(loc, chara = null, pose = null, focus := false):
 			current_sprite = %DialogControl/CharaRightSprite
 	if chara != null :
 		if pose!= null :
-			current_sprite.texture = chara_list[chara].chara_poses[pose]
+			if !focus:
+				current_sprite.texture = chara_list[chara].chara_poses[pose+"_inactive"]
+			else:
+				current_sprite.texture = chara_list[chara].chara_poses[pose]
+			
 		else:
 			current_sprite.texture = chara_list[chara].chara_poses["idle"]
 
 	else:
 		current_sprite.texture = null
-	if !focus:
-		current_sprite.self_modulate.a = 0.5
-	else:
-		current_sprite.self_modulate.a = 1
 
 func preload_dialogue_audio() -> void:
 	dialogue_audio_cache.clear()

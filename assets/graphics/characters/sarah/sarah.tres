@@ -1,19 +1,25 @@
 [gd_resource type="Resource" script_class="Character" format=3 uid="uid://b20qs8cvb6sd"]
 
-[ext_resource type="Texture2D" uid="uid://bilstteipywuo" path="res://assets/graphics/characters/sarah/sarah_body_cheerful.png" id="1_xsjb3"]
-[ext_resource type="Texture2D" uid="uid://b52u64ksg5y4w" path="res://assets/graphics/characters/sarah/sarah_body_irritated.png" id="2_0p44j"]
-[ext_resource type="Texture2D" uid="uid://cevpjmgt5fuxb" path="res://assets/graphics/characters/sarah/sarah_body_neutral.png" id="3_hn74y"]
+[ext_resource type="Texture2D" uid="uid://cg8q6kwi863bu" path="res://assets/graphics/characters/sarah/sarah_body_neutral_rgb.png" id="1_n0yet"]
+[ext_resource type="Texture2D" uid="uid://boj8lqcha5rr3" path="res://assets/graphics/characters/sarah/sarah_body_neutral_grayscale.png" id="2_mtmsc"]
+[ext_resource type="Texture2D" uid="uid://ucekt8nov7bj" path="res://assets/graphics/characters/sarah/sarah_body_cheerful_rgb.png" id="3_a8wqd"]
 [ext_resource type="Script" uid="uid://37st7epq5s28" path="res://assets/graphics/characters/chara_template.gd" id="3_pa7g5"]
-[ext_resource type="Texture2D" uid="uid://c3p1ew1tahrbd" path="res://assets/graphics/characters/sarah/sarah_head_neutral.png" id="4_n0yet"]
+[ext_resource type="Texture2D" uid="uid://bppafmhu404wa" path="res://assets/graphics/characters/sarah/sarah_body_cheerful_grayscale.png" id="4_os4vq"]
+[ext_resource type="Texture2D" uid="uid://cxwmbf4q6gwbr" path="res://assets/graphics/characters/sarah/sarah_body_irritated_rgb.png" id="5_ptb54"]
+[ext_resource type="Texture2D" uid="uid://cwlytg4huido7" path="res://assets/graphics/characters/sarah/sarah_body_irritated_grayscale.png" id="6_6d33f"]
+[ext_resource type="Texture2D" uid="uid://djttcwe4tblqe" path="res://assets/graphics/characters/sarah/sarah_head_rgb.png" id="7_5pa5n"]
 
 [resource]
 script = ExtResource("3_pa7g5")
 chara_name = "Sarah"
-head = ExtResource("4_n0yet")
+head = ExtResource("7_5pa5n")
 chara_poses = Dictionary[String, Texture2D]({
-"cheerful": ExtResource("1_xsjb3"),
-"irritated": ExtResource("2_0p44j"),
-"neutral": ExtResource("3_hn74y")
+"cheerful": ExtResource("3_a8wqd"),
+"cheerful_inactive": ExtResource("4_os4vq"),
+"irritated": ExtResource("5_ptb54"),
+"irritated_inactive": ExtResource("6_6d33f"),
+"neutral": ExtResource("1_n0yet"),
+"neutral_inactive": ExtResource("2_mtmsc")
 })
 main_color = Color(0.7411765, 0.27450982, 0.40784314, 1)
 secondary_color = Color(0.24313726, 0.7411765, 0.40784314, 1)
