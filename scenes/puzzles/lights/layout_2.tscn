@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://mkjca5f1xpl"]
+
+[ext_resource type="PackedScene" uid="uid://utg1f2c7lp7p" path="res://scenes/puzzles/lights/light_target.tscn" id="1_drdoa"]
+
+[node name="Layout2" type="Control" unique_id=538735211]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LightTarget" parent="." unique_id=2066268140 instance=ExtResource("1_drdoa")]
+position = Vector2(486, 596)
+target_color = "White"
+
+[node name="LightTarget2" parent="." unique_id=2137373151 instance=ExtResource("1_drdoa")]
+position = Vector2(1011, 850)
+target_color = "Blue"
+
+[node name="LightTarget3" parent="." unique_id=962100967 instance=ExtResource("1_drdoa")]
+position = Vector2(486, 342)

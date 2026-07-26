@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Character" format=3 uid="uid://bxj2bxhb218vp"]
+
+[ext_resource type="Script" uid="uid://37st7epq5s28" path="res://assets/graphics/characters/chara_template.gd" id="1_mqqb4"]
+[ext_resource type="Texture2D" uid="uid://blk5wq8ivys0v" path="res://assets/graphics/characters/player/player_v1.png" id="1_vhl6q"]
+
+[resource]
+script = ExtResource("1_mqqb4")
+chara_name = "Player"
+chara_poses = Dictionary[String, Texture2D]({
+"neutral": ExtResource("1_vhl6q")
+})
+main_color = Color(0.7019608, 0.7019608, 0.7019608, 1)
+secondary_color = Color(1, 1, 1, 1)
+metadata/_custom_type_script = "uid://37st7epq5s28"

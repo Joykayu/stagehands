@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://utg1f2c7lp7p"]
+
+[ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="1_fgyle"]
+[ext_resource type="Script" uid="uid://7buc0rww8jjh" path="res://scenes/puzzles/lights/light_target.gd" id="1_o0l62"]
+[ext_resource type="Texture2D" uid="uid://dxqehe4nio6nx" path="res://assets/graphics/puzzles/lights/target_on1.png" id="3_7xrxv"]
+[ext_resource type="Texture2D" uid="uid://bq3nq14axobgu" path="res://assets/graphics/puzzles/lights/target_on2.png" id="4_h2rh7"]
+
+[sub_resource type="Gradient" id="Gradient_fgyle"]
+offsets = PackedFloat32Array(0.5799136, 0.7224622)
+colors = PackedColorArray(0.3232125, 0.3232125, 0.3232125, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0v4mc"]
+gradient = SubResource("Gradient_fgyle")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f140n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7xrxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h2rh7")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o0l62"]
+radius = 31.33
+height = 171.57
+
+[node name="LightTarget" type="Node2D" unique_id=2066268140]
+script = ExtResource("1_o0l62")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1626240335]
+scale = Vector2(3.0625, 1.125)
+texture = SubResource("GradientTexture2D_0v4mc")
+
+[node name="LightsOnVFX" type="AnimatedSprite2D" parent="." unique_id=2035427328]
+unique_name_in_owner = true
+visible = false
+sprite_frames = SubResource("SpriteFrames_f140n")
+autoplay = "default"
+frame_progress = 0.025019504
+
+[node name="TargetArea" type="Area2D" parent="." unique_id=1720060020]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TargetArea" unique_id=1612586882]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_o0l62")
+
+[node name="TargetLabel" type="RichTextLabel" parent="." unique_id=1436234173]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -34.0
+offset_right = 86.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fgyle")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Yellow"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

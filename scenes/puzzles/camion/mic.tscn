@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b2xvhf47lerym"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_ps1uh"]
+[ext_resource type="Texture2D" uid="uid://djr5i8mj85jg8" path="res://assets/graphics/puzzles/objects/mic.png" id="2_2sa1y"]
+
+[node name="Mic" unique_id=2139717115 instance=ExtResource("1_ps1uh")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=890203929]
+mass = 0.5
+
+[node name="Sprite2D" parent="RigidBody2D" index="0" unique_id=96188590]
+texture = ExtResource("2_2sa1y")
+
+[node name="CollisionShape2D" parent="RigidBody2D" index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-75, 18, 24, -18, 50, -4, 51, 7, 19, 19)

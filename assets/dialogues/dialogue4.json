@@ -1,0 +1,490 @@
+{
+	"metadata": {
+		"chara_list": [
+			"Sarah",
+			"Player",
+			"Annabelle",
+            "Boss"
+		]
+	},
+	"start": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "irritated",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Hey. How was it with Fred I hope he didn’t push you too much?",
+			"audio": "s4r092.mp3"
+		},
+		"next": "line_1"
+	},
+	"line_1": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "No, in fact he was nice.",
+			"audio": null
+		},
+		"next": "line_2"
+	},
+	"line_2": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "irritated",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Good. It’s just that when he’s focused on his damn cables, there’s no way to speak to him. You know It’s like he doesn’t care about us.",
+			"audio": "s4r094.mp3"
+		},
+		"next": "line_3"
+	},
+	"line_3": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "I see..",
+			"audio": null
+		},
+		"next": "line_4"
+	},
+	"line_4": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "irritated",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Alright, let’s get this done, quick and efficient. We don’t really have a choice!",
+			"audio": "s4r096.mp3"
+		},
+		"next": "line_5"
+	},
+	"line_5": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "What do we have to do",
+			"audio": null
+		},
+		"next": "line_6"
+	},
+	"line_6": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Setup the [...]. Walk with me to get the materials.",
+			"audio": "s4r098.mp3"
+		},
+		"next": "line_7"
+	},
+	"line_7": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "[i]You start walking towards a pile of wooden planks of all sizes.[/i]",
+			"audio": null
+		},
+		"next": "line_8"
+	},
+	"line_8": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "irritated",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Can you believe what the boss said? Personally, I don’t care. We’ll do it, and we’ll do it well!",
+			"audio": "s4r100.mp3"
+		},
+		"next": "line_9"
+	},
+	"line_9": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "Right!",
+			"audio": null
+		},
+		"next": "line_10"
+	},
+	"line_10": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Anyways, I don’t really give a crap about him. We”ll organize this festival, whether he’s here or not. And if it’s not a festival, it would be something else.",
+			"audio": "s4r102.mp3"
+		},
+		"next": "line_11"
+	},
+	"line_11": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "Such as…",
+			"audio": null
+		},
+		"next": "line_12"
+	},
+	"line_12": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "cheerful",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "It doesn’t really matter. What matters to me is making people happy. You know the feeling. Once you’re done organizing, and you see the smile on people’s faces...",
+			"audio": "s4r104.mp3"
+		},
+		"next": "line_13"
+	},
+	"line_13": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "cheerful",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "And they thank you because they’re having a blast, I live for that stuff. And I’m convinced we’d do it nonetheless.",
+			"audio": "s4r105.mp3"
+		},
+		"next": "line_14"
+	},
+	"line_14": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Sure, it would be different. We’d have less budget, we’d be less people. I’d hate not to see some of my favorite artists, but in the end we’d all be closer to one another.",
+			"audio": "s4r106.mp3"
+		},
+		"next": "line_15"
+	},
+	"line_15": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "I see.",
+			"audio": null
+		},
+		"next": "line_16"
+	},
+	"line_16": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "I’m not saying we should just give it all up, burn it down, and start from nothing, living in huts and whatnot. I’m just saying, with or without the money, we’d always find a way to make people live and dance.",
+			"audio": "s4r108.mp3"
+		},
+		"next": "line_17"
+	},
+	"line_17": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "In the end, they need us more than we need them. We’d adapt.",
+			"audio": "s4r109.mp3"
+		},
+		"next": "line_18"
+	},
+	"line_18": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "AAAAAAaaaanyways we’ve got a job to do. Can you help me quoicoubeh It’s almost done. We just need to …",
+			"audio": "s4r110.mp3"
+		},
+		"next": "puzzle3"
+	},
+	"puzzle3": {
+		"type": "puzzle",
+		"chara": "Sarah",
+		"next": "line_19"
+	},
+	"line_19": {
+		"type": "line",
+		"left": {
+			"chara": "Annabelle",
+			"mood": "warm",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Hey guys! All good other there Is the quoicoubeh ready?",
+			"audio": "s4r111.mp3"
+		},
+		"next": "line_20"
+	},
+	"line_20": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "Yes, Annabelle! All done here.",
+			"audio": null
+		},
+		"next": "line_21"
+	},
+	"line_21": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "cheerful",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Yep, all good Anna! [i]Lower, to you. [/i]She’s really great, Anna. She does so much for us, trying to make it all easier.",
+			"audio": "s4r113.mp3"
+		},
+		"next": "line_22"
+	},
+	"line_22": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "irritated",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Although, I’m not stupid. I can see how stressed she gets from this.",
+			"audio": "s4r114.mp3"
+		},
+		"next": "line_23"
+	},
+	"line_23": {
+		"type": "line",
+		"left": {
+			"chara": "Sarah",
+			"mood": "neutral",
+			"focus": false
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": true
+		},
+		"line": {
+			"speaker": "right",
+			"text": "[i]She gets interrupted by the speakers.[/i]",
+			"audio": null
+		},
+		"next": "line_24"
+	},
+	"line_24": {
+		"type": "line",
+		"left": {
+			"chara": "Boss",
+			"mood": "neutral",
+			"focus": true
+		},
+		"right": {
+			"chara": "Player",
+			"mood": "neutral",
+			"focus": false
+		},
+		"line": {
+			"speaker": "left",
+			"text": "Hello tout le monde. Time’s up! I hope everything is done and well done otherwise you know what will happen.",
+			"audio": "s4r116.mp3"
+		},
+		"next": "end"
+	}
+}

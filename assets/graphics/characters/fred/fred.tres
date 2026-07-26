@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" format=3 uid="uid://dsa8diujdeffu"]
+
+[ext_resource type="Texture2D" uid="uid://brkcy0ofeam8g" path="res://assets/graphics/characters/fred/fred_body_annoyed.png" id="1_l3lbc"]
+[ext_resource type="Texture2D" uid="uid://c4jirrx2ra0jq" path="res://assets/graphics/characters/fred/fred_body_neutral.png" id="2_6nq1u"]
+[ext_resource type="Script" uid="uid://37st7epq5s28" path="res://assets/graphics/characters/chara_template.gd" id="2_sot7h"]
+[ext_resource type="Texture2D" uid="uid://cxqs1ifo4brtl" path="res://assets/graphics/characters/fred/fred_body_pleased.png" id="3_ehmrr"]
+[ext_resource type="Texture2D" uid="uid://c1vsatbrxfp27" path="res://assets/graphics/characters/fred/fred_head_neutral.png" id="4_5wk5s"]
+
+[resource]
+script = ExtResource("2_sot7h")
+chara_name = "Fred"
+head = ExtResource("4_5wk5s")
+chara_poses = Dictionary[String, Texture2D]({
+"annoyed": ExtResource("1_l3lbc"),
+"neutral": ExtResource("2_6nq1u"),
+"pleased": ExtResource("3_ehmrr")
+})
+main_color = Color(0.8509804, 0.8117647, 0.13333334, 1)
+secondary_color = Color(0.34901962, 0.34901962, 0.6666667, 1)
+metadata/_custom_type_script = "uid://37st7epq5s28"

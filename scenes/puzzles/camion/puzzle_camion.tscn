@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dqtoflhe0i0if"]
+
+[ext_resource type="Script" uid="uid://bv1hnemxhax54" path="res://scenes/puzzles/camion/puzzle_camion.gd" id="1_6k2ma"]
+[ext_resource type="Texture2D" uid="uid://drrgjkow2chv" path="res://assets/graphics/puzzles/camion/puzzle-truck.png" id="2_f7w71"]
+[ext_resource type="PackedScene" uid="uid://cwen5mv8nd6yc" path="res://scenes/puzzles/camion/guitar.tscn" id="3_8sfak"]
+[ext_resource type="PackedScene" uid="uid://cx6j7u8xlkdiy" path="res://scenes/puzzles/camion/box_long.tscn" id="4_qwstc"]
+[ext_resource type="PackedScene" uid="uid://6pyp1jbx2rwh" path="res://scenes/puzzles/camion/box_small.tscn" id="5_x582l"]
+[ext_resource type="PackedScene" uid="uid://bx71ah1tisax" path="res://scenes/puzzles/camion/box_square.tscn" id="6_cps0b"]
+[ext_resource type="PackedScene" uid="uid://b2xvhf47lerym" path="res://scenes/puzzles/camion/mic.tscn" id="7_qim2y"]
+[ext_resource type="PackedScene" uid="uid://1mk70bbdpe4l" path="res://scenes/puzzles/camion/mic_2.tscn" id="8_u3uhk"]
+[ext_resource type="PackedScene" uid="uid://b11eqtwsh6qob" path="res://scenes/puzzles/camion/piano.tscn" id="9_g2qh5"]
+[ext_resource type="PackedScene" uid="uid://btfe8240ufk1n" path="res://scenes/puzzles/camion/snare_1.tscn" id="10_rtl2k"]
+[ext_resource type="PackedScene" uid="uid://dsp8lkaodc2gy" path="res://scenes/puzzles/camion/snare_2.tscn" id="11_lvgom"]
+[ext_resource type="PackedScene" uid="uid://btetgg2vri31" path="res://scenes/puzzles/camion/triangle.tscn" id="12_qxxf5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_c3t4r"]
+
+[node name="PuzzleCamion" type="Control" unique_id=411532830]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6k2ma")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1705392585]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("2_f7w71")
+
+[node name="Borders" type="StaticBody2D" parent="." unique_id=460481524]
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_c3t4r")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Borders" unique_id=44439607]
+position = Vector2(945, 575)
+polygon = PackedVector2Array(-24, -19, 721, -10, 720, -477, 14, -480, 15, -409, -14, -408, -174, -372, -168, -902, 1073, -890, 1078, 689, -1186, 690, -1181, -906, -177, -901, -177, -578, -930, -576, -928, 365, -163.156, 363.07587, -162, -107, -24, -103)
+
+[node name="Camion" type="Area2D" parent="." unique_id=1025376425]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Camion" unique_id=113022262]
+position = Vector2(945, 575)
+polygon = PackedVector2Array(14, 7, 15, -500, 741, -495, 738, 5)
+
+[node name="Draggables" type="Node2D" parent="." unique_id=310771425]
+
+[node name="Guitar" parent="Draggables" unique_id=2139717115 instance=ExtResource("3_8sfak")]
+position = Vector2(451, 536)
+
+[node name="BoxLong" parent="Draggables" unique_id=544642686 instance=ExtResource("4_qwstc")]
+position = Vector2(558, 826)
+
+[node name="BoxSmall" parent="Draggables" unique_id=887870787 instance=ExtResource("5_x582l")]
+position = Vector2(441, 398)
+
+[node name="BoxSquare" parent="Draggables" unique_id=1337140658 instance=ExtResource("6_cps0b")]
+position = Vector2(683, 602)
+
+[node name="Mic" parent="Draggables" unique_id=548455085 instance=ExtResource("7_qim2y")]
+position = Vector2(279, 676)
+
+[node name="Mic2" parent="Draggables" unique_id=583566930 instance=ExtResource("8_u3uhk")]
+position = Vector2(165, 839)
+
+[node name="Piano" parent="Draggables" unique_id=1271423002 instance=ExtResource("9_g2qh5")]
+position = Vector2(750, 393)
+
+[node name="Snare1" parent="Draggables" unique_id=1144899150 instance=ExtResource("10_rtl2k")]
+position = Vector2(89, 826)
+
+[node name="Snare2" parent="Draggables" unique_id=542587545 instance=ExtResource("11_lvgom")]
+position = Vector2(254, 829)
+
+[node name="Triangle" parent="Draggables" unique_id=1305775512 instance=ExtResource("12_qxxf5")]
+position = Vector2(109, 675)
+
+[connection signal="mouse_entered" from="Borders" to="." method="_on_boundaries_mouse_entered"]
+[connection signal="body_entered" from="Camion" to="." method="_on_camion_body_entered"]
+[connection signal="body_exited" from="Camion" to="." method="_on_camion_body_exited"]

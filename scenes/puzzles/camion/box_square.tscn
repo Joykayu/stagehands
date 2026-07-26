@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bx71ah1tisax"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_5b35g"]
+[ext_resource type="Texture2D" uid="uid://oup63jjjddrc" path="res://assets/graphics/puzzles/objects/box square.png" id="2_o5hsh"]
+
+[node name="BoxSquare" unique_id=2139717115 instance=ExtResource("1_5b35g")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=890203929]
+mass = 25.0
+
+[node name="Sprite2D" parent="RigidBody2D" index="0" unique_id=96188590]
+texture = ExtResource("2_o5hsh")
+
+[node name="CollisionShape2D" parent="RigidBody2D" index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-96, -119, 99, -114, 91, 119, -99, 118)

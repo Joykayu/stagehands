@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://btetgg2vri31"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_f56hg"]
+[ext_resource type="Texture2D" uid="uid://dgbt874axc1sa" path="res://assets/graphics/puzzles/objects/triangle.png" id="2_k8slh"]
+
+[node name="Triangle" unique_id=2139717115 instance=ExtResource("1_f56hg")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=890203929]
+mass = 0.2
+
+[node name="Sprite2D" parent="RigidBody2D" index="0" unique_id=96188590]
+texture = ExtResource("2_k8slh")
+
+[node name="CollisionShape2D" parent="RigidBody2D" index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(5, -37, 38, 36, -38, 34)

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" format=3 uid="uid://cx51023bqdb7q"]
+
+[ext_resource type="Script" uid="uid://37st7epq5s28" path="res://assets/graphics/characters/chara_template.gd" id="1_evcrn"]
+[ext_resource type="Texture2D" uid="uid://bxk1btva761u2" path="res://assets/graphics/characters/annabelle/annabelle_body_concerned.png" id="1_yr5qv"]
+[ext_resource type="Texture2D" uid="uid://16xtf0q4roje" path="res://assets/graphics/characters/annabelle/annabelle_body_neutral.png" id="2_2ngpe"]
+[ext_resource type="Texture2D" uid="uid://n6h40os86q47" path="res://assets/graphics/characters/annabelle/annabelle_body_warm.png" id="3_bvmwf"]
+[ext_resource type="Texture2D" uid="uid://4x2wcl8ufg26" path="res://assets/graphics/characters/annabelle/annabelle_head_neutral.png" id="4_yr5qv"]
+
+[resource]
+script = ExtResource("1_evcrn")
+chara_name = "Annabelle"
+head = ExtResource("4_yr5qv")
+chara_poses = Dictionary[String, Texture2D]({
+"concerned": ExtResource("1_yr5qv"),
+"neutral": ExtResource("2_2ngpe"),
+"warm": ExtResource("3_bvmwf")
+})
+main_color = Color(0.89411765, 0.49019608, 0.08627451, 1)
+secondary_color = Color(0.28235295, 0.7019608, 0.6784314, 1)
+metadata/_custom_type_script = "uid://37st7epq5s28"

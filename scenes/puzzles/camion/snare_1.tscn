@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://btfe8240ufk1n"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_gp3rj"]
+[ext_resource type="Texture2D" uid="uid://d3fih60s2u1nk" path="res://assets/graphics/puzzles/objects/snare1.png" id="2_y34rc"]
+
+[node name="Snare1" unique_id=2139717115 instance=ExtResource("1_gp3rj")]
+
+[node name="RigidBody2D" parent="." index="0" unique_id=890203929]
+mass = 5.0
+
+[node name="Sprite2D" parent="RigidBody2D" index="0" unique_id=96188590]
+texture = ExtResource("2_y34rc")
+
+[node name="CollisionShape2D" parent="RigidBody2D" index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-29, -100, 55, -97, 53, -55, 16, -29, 15, 23, 51, 61, 53, 105, -71, 92, 1, 24, 2, -30, -9, -48, -34, -50)
