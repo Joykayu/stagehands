@@ -4,19 +4,19 @@ extends Node
 # hint/instructions shown next to their portrait while the puzzle is active.
 var puzzle_list : Dictionary = { 
 	"puzzle1" : {
-		"scene" : "res://scenes/puzzles/lights/puzzle_lights.tscn",
+		"scene" : "res://scenes/puzzles/camion/puzzle_camion.tscn",
 		"character" : "Annabelle",
-		"hint" : "Match each spotlight's color to its target. Toggle the lights and rotate the trusses until every target lights up.",
+		"hint" : "Load every instrument and box into the truck. Drag each object inside and make sure it stays put.",
 	},
 	"puzzle2" : {
-		"scene" : "res://scenes/puzzle_placeholder.tscn",
+		"scene" : "res://scenes/puzzles/lights/puzzle_lights.tscn",
 		"character" : "Fred",
-		"hint" : "Figure out where everything goes, then press \"Go next\" once you're done.",
+		"hint" : "Match each spotlight's color to its target. Toggle the lights and rotate the trusses until every target lights up.",
 	},
 	"puzzle3" : {
-		"scene" : "res://scenes/puzzle_placeholder.tscn",
+		"scene" : "res://scenes/puzzles/tower/puzzle_tower.tscn",
 		"character" : "Sarah",
-		"hint" : "Take your time, we'll get through this together.",
+		"hint" : "Stack and place each piece to build the tower, then guide the sun into place.",
 	},
 }
 
