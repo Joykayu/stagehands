@@ -3,7 +3,6 @@ extends Control
 var moving := true
 var speed := 1000
 
-var clock_texture = preload("res://assets/graphics/clock_v1.png")
 
 signal transition_finished
 
@@ -24,6 +23,7 @@ func begin_transition(type = "default"):
 				get_node("/root/Main").chara_res_dict["Annabelle"].main_color
 				)
 			%Title.show()
+			%Image.texture=load("res://assets/graphics/clocks/clock_10.png")
 			%Image.show()
 			%Subtitle.text = " H - 6 "
 			%Subtitle.show()
@@ -43,6 +43,7 @@ func begin_transition(type = "default"):
 				get_node("/root/Main").chara_res_dict["Fred"].main_color
 				)
 			%Title.show()
+			%Image.texture=load("res://assets/graphics/clocks/clock_12.png")
 			%Image.show()
 			%Subtitle.text = " H - 4 "
 			%Subtitle.show()
@@ -62,6 +63,7 @@ func begin_transition(type = "default"):
 				get_node("/root/Main").chara_res_dict["Sarah"].main_color
 				)
 			%Title.show()
+			%Image.texture=load("res://assets/graphics/clocks/clock_14.png")
 			%Image.show()
 			%Subtitle.text = " H - 2 "
 			%Subtitle.show()
@@ -77,6 +79,8 @@ func begin_transition(type = "default"):
 		"outro":
 			%Title.text = "Outro"
 			%Title.show()
+			%Image.texture=load("res://assets/graphics/clocks/clock_16.png")
+			%Image.show()
 			$AnimationPlayer.play("slide")
 
 		"epilogue":
