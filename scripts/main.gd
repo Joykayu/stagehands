@@ -38,6 +38,9 @@ var transitions_list = [
 	"puzzle3",
 	"outro",
 	"epilogue",
+	"default",
+	"default",
+	"end",
 	"credits"
 ]
 
@@ -47,16 +50,16 @@ func _ready():
 	$AudioManager.enter_menu()
 	for key in chara_res_list.keys():
 		chara_res_dict[key] = load(chara_res_list[key])
-	$Menu/TextureRect/CenterContainer/PlayButton.connect("pressed",on_play_button_pressed)
+	$Menu/TextureRect/PlayButton.connect("pressed",on_play_button_pressed)
 
 func on_play_button_pressed():
-	$Menu/TextureRect/CenterContainer/PlayButton.disabled = true
-	$AudioManager.exit_menu()
+  $AudioManager.exit_menu()
+	$Menu/TextureRect/PlayButton.disabled = true
 	next_transition("dialogue")
 
 func next_transition(type):
 	$DialogSystem.is_active = false
-	spawn_transition()
+	spawn_transition(type)
 	
 	await get_tree().create_timer(1.0).timeout
 	if curr_transition_idx == 0:
@@ -86,7 +89,11 @@ func next_transition(type):
 	curr_transition_idx += 1
 
 
-func spawn_transition():
+func spawn_transition(type):
+	# Skip the bell for the very first transition (menu -> intro) and for puzzle in/out transitions.
+	var is_puzzle_transition = type == "puzzle_in" or type == "puzzle_out"
+	if curr_transition_idx != 0 and !is_puzzle_transition:
+		$AudioManager.play_transition_bell()
 	var instance = transition_scene.instantiate()
 	add_child(instance)
 	instance.connect("transition_finished",on_transition_finished)

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cx0236glrjes4"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_6aoun"]
+[ext_resource type="Texture2D" uid="uid://be2ujahckpca3" path="res://assets/graphics/puzzles/tower/truss2line.png" id="2_1j5n7"]
+
+[node name="Truss2" unique_id=2139717115 instance=ExtResource("1_6aoun")]
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="0" unique_id=96188590]
+texture = ExtResource("2_1j5n7")
+
+[node name="CollisionShape2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-64, -96, 65, -96, 67, 95, -65, 96, -64, 56, -35, 52, -5, 39, 15, 1, 7, -34, -23, -50, -64, -50)

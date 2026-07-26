@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bodpmojqd6bmb"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_8rtqn"]
+[ext_resource type="Texture2D" uid="uid://duylrabnecmbf" path="res://assets/graphics/puzzles/tower/triangle1lines.png" id="2_pvp8i"]
+
+[node name="Triangle1" unique_id=2139717115 instance=ExtResource("1_8rtqn")]
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="0" unique_id=96188590]
+texture = ExtResource("2_pvp8i")
+
+[node name="CollisionShape2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-89, 69, 71, 69, 70, -86)

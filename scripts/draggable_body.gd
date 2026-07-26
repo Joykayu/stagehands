@@ -12,6 +12,7 @@ var is_rotating = false
 var omega := 5.0
 
 signal body_dragged(body)
+signal body_dropped(body)
 
 func _ready() -> void:
 	# Set the node_a to a static body without a collision, we only need it for the pin effect.
@@ -56,6 +57,7 @@ func disconnect_mouse():
 	# Clear the node_b path
 	mouse_pin.node_b = NodePath()
 	is_dragging = false
+	body_dropped.emit(self)
 	# Reset the angular damp to 0
 	rigid_body_2d.angular_damp = 15
 	#rigid_body_2d.lock_rotation = false

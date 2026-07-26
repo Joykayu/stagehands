@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bx71ah1tisax"]
 
-[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_5b35g"]
-[ext_resource type="Texture2D" uid="uid://oup63jjjddrc" path="res://assets/graphics/puzzles/objects/box square.png" id="2_o5hsh"]
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_5b35g"]
+[ext_resource type="Texture2D" uid="uid://oup63jjjddrc" path="res://assets/graphics/puzzles/camion/box square.png" id="2_o5hsh"]
 
 [node name="BoxSquare" unique_id=2139717115 instance=ExtResource("1_5b35g")]
 

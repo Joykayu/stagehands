@@ -77,12 +77,14 @@ _data = {
 }
 
 [node name="Transition" type="Control" unique_id=2000927017]
+light_mask = 0
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_rerct")
 
 [node name="BlackScreen" type="TextureRect" parent="." unique_id=843264894]
 unique_name_in_owner = true
+light_mask = 0
 layout_mode = 0
 offset_left = -2880.0
 offset_bottom = 1080.0
@@ -125,6 +127,7 @@ layout_mode = 2
 [node name="Image" type="TextureRect" parent="BlackScreen/VBoxContainer/CenterContainer2" unique_id=1329135796]
 unique_name_in_owner = true
 visible = false
+light_mask = 0
 layout_mode = 2
 
 [node name="Subtitle" type="RichTextLabel" parent="BlackScreen/VBoxContainer" unique_id=2023140481]
@@ -168,6 +171,7 @@ vertical_alignment = 1
 [node name="Stripes" type="TextureRect" parent="BlackScreen" unique_id=54711447]
 unique_name_in_owner = true
 visible = false
+light_mask = 0
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

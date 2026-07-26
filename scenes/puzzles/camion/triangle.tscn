@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://btetgg2vri31"]
 
-[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/camion/draggable_body.tscn" id="1_f56hg"]
-[ext_resource type="Texture2D" uid="uid://dgbt874axc1sa" path="res://assets/graphics/puzzles/objects/triangle.png" id="2_k8slh"]
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_f56hg"]
+[ext_resource type="Texture2D" uid="uid://dgbt874axc1sa" path="res://assets/graphics/puzzles/camion/triangle.png" id="2_k8slh"]
 
 [node name="Triangle" unique_id=2139717115 instance=ExtResource("1_f56hg")]
 

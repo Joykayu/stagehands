@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://22vpt2ljquye"]
+
+[ext_resource type="PackedScene" uid="uid://cj12mmykw41i0" path="res://scenes/puzzles/draggable_body.tscn" id="1_1fcnb"]
+[ext_resource type="Texture2D" uid="uid://du0hg61crfyto" path="res://assets/graphics/puzzles/tower/planklines.png" id="2_nbv3k"]
+
+[node name="Plank" unique_id=2139717115 instance=ExtResource("1_1fcnb")]
+
+[node name="Sprite2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="0" unique_id=96188590]
+texture = ExtResource("2_nbv3k")
+
+[node name="CollisionShape2D" parent="RigidBody2D" parent_id_path=PackedInt32Array(890203929) index="1" unique_id=1565047248]
+visible = true
+polygon = PackedVector2Array(-30, -240, 28, -240, 29, 237, -33, 237)

@@ -24,3 +24,6 @@ unique_name_in_owner = true
 
 [node name="AmbientPlayer" type="AudioStreamPlayer" parent="AudioManager" unique_id=1837451921]
 unique_name_in_owner = true
+
+[node name="BellPlayer" type="AudioStreamPlayer" parent="AudioManager" unique_id=2143773352]
+unique_name_in_owner = true
