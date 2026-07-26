@@ -84,9 +84,12 @@ func next_transition(type):
 
 
 func spawn_transition(type):
-	# Skip the bell for the very first transition (menu -> intro) and for puzzle in/out transitions.
+	# Skip the bell for the very first transition (menu -> intro), for puzzle in/out
+	# transitions, and for the epilogue transitions (the last two: "epilogue" and "end").
 	var is_puzzle_transition = type == "puzzle_in" or type == "puzzle_out"
-	if curr_transition_idx != 0 and !is_puzzle_transition:
+	var transition_key = transitions_list[curr_transition_idx]
+	var is_epilogue_transition = transition_key == "epilogue" or transition_key == "end"
+	if curr_transition_idx != 0 and !is_puzzle_transition and !is_epilogue_transition:
 		$AudioManager.play_transition_bell()
 	var instance = transition_scene.instantiate()
 	add_child(instance)
