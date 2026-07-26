@@ -6,12 +6,12 @@
 [ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="3_4ytvr"]
 [ext_resource type="Texture2D" uid="uid://bocbd6s71koel" path="res://assets/graphics/characters/fred/fred_body_neutral_rgb.png" id="3_v86rl"]
 [ext_resource type="Texture2D" uid="uid://bp84ehi4i5o1y" path="res://assets/graphics/menu button.png" id="5_g3eks"]
-[ext_resource type="Shader" uid="uid://drop_shader" path="res://assets/graphics/drop_shadow.gdshader" id="6_shad"]
-[ext_resource type="Script" uid="uid://menu_script" path="res://scripts/menu.gd" id="7_mgd"]
+[ext_resource type="Shader" uid="uid://bxrfukvufbb5v" path="res://assets/graphics/drop_shadow.gdshader" id="6_shad"]
+[ext_resource type="Script" uid="uid://dec0y060ml5y7" path="res://scripts/menu.gd" id="7_mgd"]
+[ext_resource type="Texture2D" uid="uid://c26ir4wteqiey" path="res://assets/graphics/title.png" id="6_v86rl"]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource("6_shad")
-[ext_resource type="Texture2D" uid="uid://c26ir4wteqiey" path="res://assets/graphics/title.png" id="6_v86rl"]
 
 [node name="Menu" type="Control" unique_id=949658739]
 script = ExtResource("7_mgd")
