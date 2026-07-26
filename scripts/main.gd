@@ -38,7 +38,8 @@ var transitions_list = [
 	"puzzle3",
 	"outro",
 	"epilogue",
-	"end"
+	"end",
+	"credits"
 ]
 
 
@@ -54,6 +55,11 @@ func on_play_button_pressed():
 
 func next_transition(type):
 	$DialogSystem.is_active = false
+	# The last dialogue file (epilogue) has no successor - once it's been fully
+	# read, redirect straight to the "end" transition instead of trying (and
+	# failing) to load a dialogue_list entry that doesn't exist.
+	if type == "dialogue" and curr_dialogue_idx >= dialogue_list.size():
+		type = "end"
 	spawn_transition(type)
 	
 	await get_tree().create_timer(1.0).timeout
@@ -65,6 +71,10 @@ func next_transition(type):
 		"dialogue" :
 			$DialogSystem.get_dialogue(dialogue_path + dialogue_list[curr_dialogue_idx])
 			curr_dialogue_idx +=1
+		"end":
+			state = "end"
+		"credits":
+			state = "credits"
 		"puzzle_in" :
 			state = "puzzle"
 			$PuzzleSystem.load_puzzle(transitions_list[curr_transition_idx])
@@ -86,7 +96,7 @@ func spawn_transition(type):
 	# transitions, and for the epilogue transitions (the last two: "epilogue" and "end").
 	var is_puzzle_transition = type == "puzzle_in" or type == "puzzle_out"
 	var transition_key = transitions_list[curr_transition_idx]
-	var is_epilogue_transition = transition_key == "epilogue" or transition_key == "end"
+	var is_epilogue_transition = transition_key == "epilogue" or transition_key == "end" or transition_key == "credits"
 	if curr_transition_idx != 0 and !is_puzzle_transition and !is_epilogue_transition:
 		$AudioManager.play_transition_bell()
 	var instance = transition_scene.instantiate()
@@ -105,6 +115,11 @@ func on_transition_finished():
 			$DialogSystem.is_active = true
 		"puzzle":
 			#puzzle is active
+			pass
+		"end":
+			# Chain straight into the credits screen once "The End" has finished playing.
+			next_transition("credits")
+		"credits":
 			pass
 
 func set_mouse_filter_recursive(node: Node, filter: Control.MouseFilter) -> void:
