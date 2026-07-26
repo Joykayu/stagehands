@@ -87,19 +87,5 @@ func begin_transition(type = "default"):
 
 func _on_animation_player_animation_finished(_anim_name):
 	transition_finished.emit()
-	#reset title
-	%Title.remove_theme_color_override("font_outline_color")
-	%Title.hide()
-	
-	#reset subtitle
-	%Subtitle.hide()
-	
-	#reset image
-	%Image.hide()
-	
-	#reset stripes
-	%Stripes.modulate = Color.WHITE
-	%Stripes.hide()
-	
 	self.queue_free()
 	

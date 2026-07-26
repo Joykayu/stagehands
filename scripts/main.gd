@@ -69,13 +69,12 @@ func next_transition(type):
 			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_IGNORE)
 			$DialogSystem.is_active = false
 		"puzzle_out":
+			state = "dialogue"
 			$DialogSystem.disable_audio_playback()
 			set_mouse_filter_recursive($DialogSystem, Control.MOUSE_FILTER_STOP)
 			$DialogSystem.prepare_after_puzzle()
-			state = "dialogue"
 			$PuzzleSystem.kill_puzzle()
-			$DialogSystem.is_active = true
-	
+
 	curr_transition_idx += 1
 
 
