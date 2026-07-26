@@ -61,6 +61,7 @@ _data = {
 }
 
 [node name="Transition" type="Control" unique_id=2000927017]
+light_mask = 0
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_rerct")

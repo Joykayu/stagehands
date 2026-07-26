@@ -14,7 +14,6 @@ point_count = 2
 
 [node name="LightTruss" type="Node2D" unique_id=490220565]
 script = ExtResource("1_411fy")
-initial_rotation = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1468583312]
 texture = ExtResource("1_4s610")
@@ -32,7 +31,6 @@ loop = false
 
 [node name="Spotlight" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=79456921]
 unique_name_in_owner = true
-rotation = -2.9046526
 texture = ExtResource("2_wt7dl")
 
 [node name="LightSource" type="PointLight2D" parent="Path2D/PathFollow2D/Spotlight" unique_id=1360322916]
@@ -50,55 +48,57 @@ unique_name_in_owner = true
 polygon = PackedVector2Array(-0.72802734, -39.180542, -26.593597, -36.950745, -46.27199, -24.390442, -52.247437, -14.325958, -332.8461, 1742.8218, 404.02548, 1739.7712, 52.3033, -12.861755, 32.493225, -31.876526)
 
 [node name="Manette" type="Sprite2D" parent="." unique_id=462949938]
-position = Vector2(-41, 350)
+light_mask = 0
+position = Vector2(-105, 404)
+scale = Vector2(0.7, 0.7)
 texture = ExtResource("5_a113e")
 
 [node name="RotateLeftButton" type="Button" parent="Manette" unique_id=1821731153]
 unique_name_in_owner = true
-offset_left = -18.0
-offset_top = -62.0
-offset_right = 18.0
-offset_bottom = -23.0
+offset_left = -21.428574
+offset_top = -125.714264
+offset_right = 29.999992
+offset_bottom = -75.714294
 flat = true
 
 [node name="RotateRightButton" type="Button" parent="Manette" unique_id=1025449770]
 unique_name_in_owner = true
-offset_left = -18.0
-offset_top = -19.0
-offset_right = 18.0
-offset_bottom = 20.0
+offset_left = -20.0
+offset_top = -72.85716
+offset_right = 31.428566
+offset_bottom = -21.000046
 flat = true
 
 [node name="MoveUpButton" type="Button" parent="Manette" unique_id=1541149793]
 unique_name_in_owner = true
-offset_left = -15.0
-offset_top = 22.0
-offset_right = 15.0
-offset_bottom = 54.0
+offset_left = -24.285723
+offset_top = -19.999996
+offset_right = 32.857132
+offset_bottom = 31.428593
 flat = true
 
 [node name="MoveDownButton" type="Button" parent="Manette" unique_id=214578334]
 unique_name_in_owner = true
-offset_left = -14.0
-offset_top = 60.0
-offset_right = 14.0
-offset_bottom = 92.0
+offset_left = -19.999985
+offset_top = 32.857117
+offset_right = 31.428581
+offset_bottom = 80.0
 flat = true
 
 [node name="ColorButton" type="Button" parent="Manette" unique_id=68587668]
 unique_name_in_owner = true
-offset_left = -14.0
-offset_top = 99.0
-offset_right = 14.0
-offset_bottom = 128.0
+offset_left = -17.142853
+offset_top = 87.14282
+offset_right = 30.000008
+offset_bottom = 137.14282
 flat = true
 
 [node name="OnOffButton" type="Button" parent="Manette" unique_id=1042091827]
 unique_name_in_owner = true
-offset_left = -17.0
-offset_top = 130.0
-offset_right = 14.0
-offset_bottom = 163.0
+offset_left = -21.428574
+offset_top = 147.14282
+offset_right = 25.71428
+offset_bottom = 174.2857
 toggle_mode = true
 button_pressed = true
 flat = true
