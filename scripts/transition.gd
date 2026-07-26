@@ -73,9 +73,16 @@ func begin_transition(type = "default"):
 			%Image.texture = get_node("/root/Main").chara_res_dict["Sarah"].head
 			%Image.show()
 			$AnimationPlayer.play("slide")
-			
+
 		"outro":
-			pass
+			%Title.text = "Outro"
+			%Title.show()
+			$AnimationPlayer.play("slide")
+
+		"epilogue":
+			%Title.text = "Epilogue"
+			%Title.show()
+			$AnimationPlayer.play("slide")
 			
 
 func _on_animation_player_animation_finished(_anim_name):

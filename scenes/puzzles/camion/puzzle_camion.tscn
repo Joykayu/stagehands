@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dqtoflhe0i0if"]
 
-[ext_resource type="Script" uid="uid://bv1hnemxhax54" path="res://scripts/puzzle_camion.gd" id="1_6k2ma"]
-[ext_resource type="Texture2D" uid="uid://drrgjkow2chv" path="res://assets/graphics/puzzles/puzzle-truck.png" id="2_f7w71"]
+[ext_resource type="Script" uid="uid://bv1hnemxhax54" path="res://scenes/puzzles/camion/puzzle_camion.gd" id="1_6k2ma"]
+[ext_resource type="Texture2D" uid="uid://drrgjkow2chv" path="res://assets/graphics/puzzles/camion/puzzle-truck.png" id="2_f7w71"]
 [ext_resource type="PackedScene" uid="uid://cwen5mv8nd6yc" path="res://scenes/puzzles/camion/guitar.tscn" id="3_8sfak"]
 [ext_resource type="PackedScene" uid="uid://cx6j7u8xlkdiy" path="res://scenes/puzzles/camion/box_long.tscn" id="4_qwstc"]
 [ext_resource type="PackedScene" uid="uid://6pyp1jbx2rwh" path="res://scenes/puzzles/camion/box_small.tscn" id="5_x582l"]

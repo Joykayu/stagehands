@@ -66,38 +66,6 @@ func get_dialogue(src:String) -> void:
 	load_block_to_ui(current_line)
 
 
-func preload_dialogue_audio() -> void:
-	dialogue_audio_cache.clear()
-	if scene_script.is_empty():
-		return
-	for key in scene_script.keys():
-		var block = scene_script[key]
-		if typeof(block) != TYPE_DICTIONARY:
-			continue
-		if not block.has("line"):
-			continue
-		var audio_name = block["line"].get("audio")
-		if audio_name == null or audio_name == "":
-			continue
-		get_audio_stream(audio_name)
-
-
-func get_audio_stream(audio_name:String) -> AudioStream:
-	if dialogue_audio_cache.has(audio_name):
-		return dialogue_audio_cache[audio_name]
-
-	var audio_path = AUDIO_ROOT + audio_name
-	if not ResourceLoader.exists(audio_path):
-		push_warning("Missing dialogue audio: %s" % audio_path)
-		dialogue_audio_cache[audio_name] = null
-		return null
-
-	var stream = load(audio_path)
-	dialogue_audio_cache[audio_name] = stream
-	return stream
-
-
-
 func load_next_line():
 	if current_line["next"] != "end" :
 		current_line = scene_script[current_line["next"]]
@@ -140,6 +108,55 @@ func load_block_to_ui(block : Dictionary):
 
 	play_voice(line.get("audio"))
 
+func set_chara(loc, chara = null, pose = null, focus := false):
+	var current_sprite
+	match loc:
+		"left":
+			current_sprite = %DialogControl/CharaLeftSprite
+		"right":
+			current_sprite = %DialogControl/CharaRightSprite
+	if chara != null :
+		if pose!= null :
+			current_sprite.texture = chara_list[chara].chara_poses[pose]
+		else:
+			current_sprite.texture = chara_list[chara].chara_poses["idle"]
+
+	else:
+		current_sprite.texture = null
+	if !focus:
+		current_sprite.self_modulate.a = 0.5
+	else:
+		current_sprite.self_modulate.a = 1
+
+func preload_dialogue_audio() -> void:
+	dialogue_audio_cache.clear()
+	if scene_script.is_empty():
+		return
+	for key in scene_script.keys():
+		var block = scene_script[key]
+		if typeof(block) != TYPE_DICTIONARY:
+			continue
+		if not block.has("line"):
+			continue
+		var audio_name = block["line"].get("audio")
+		if audio_name == null or audio_name == "":
+			continue
+		get_audio_stream(audio_name)
+
+
+func get_audio_stream(audio_name:String) -> AudioStream:
+	if dialogue_audio_cache.has(audio_name):
+		return dialogue_audio_cache[audio_name]
+
+	var audio_path = AUDIO_ROOT + audio_name
+	if not ResourceLoader.exists(audio_path):
+		push_warning("Missing dialogue audio: %s" % audio_path)
+		dialogue_audio_cache[audio_name] = null
+		return null
+
+	var stream = load(audio_path)
+	dialogue_audio_cache[audio_name] = stream
+	return stream
 
 func play_voice(audio_name) -> void:
 	if audio_name == null or audio_name == "":
@@ -178,25 +195,3 @@ func prepare_after_puzzle() -> void:
 	waiting_for_puzzle_resume = false
 	load_next_line()
 	load_block_to_ui(current_line)
-
-
-
-func set_chara(loc, chara = null, pose = null, focus := false):
-	var current_sprite
-	match loc:
-		"left":
-			current_sprite = %DialogControl/CharaLeftSprite
-		"right":
-			current_sprite = %DialogControl/CharaRightSprite
-	if chara != null :
-		if pose!= null :
-			current_sprite.texture = chara_list[chara].chara_poses[pose]
-		else:
-			current_sprite.texture = chara_list[chara].chara_poses["idle"]
-
-	else:
-		current_sprite.texture = null
-	if !focus:
-		current_sprite.self_modulate.a = 0.5
-	else:
-		current_sprite.self_modulate.a = 1

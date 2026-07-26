@@ -35,7 +35,9 @@ var transitions_list = [
 	"puzzle2",
 	"chapter3",
 	"puzzle3",
-	"puzzle3"
+	"puzzle3",
+	"outro",
+	"epilogue"
 ]
 
 
@@ -72,6 +74,7 @@ func next_transition(type):
 			$DialogSystem.prepare_after_puzzle()
 			state = "dialogue"
 			$PuzzleSystem.kill_puzzle()
+			$DialogSystem.is_active = true
 	
 	curr_transition_idx += 1
 

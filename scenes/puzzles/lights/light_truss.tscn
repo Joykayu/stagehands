@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://b0r63iqagabq1"]
+
+[ext_resource type="Texture2D" uid="uid://dfj0ma7vynv6s" path="res://assets/graphics/puzzles/lights/light_truss.png" id="1_4s610"]
+[ext_resource type="Script" uid="uid://ccnfjwvrxv867" path="res://scenes/puzzles/lights/light_truss.gd" id="1_411fy"]
+[ext_resource type="Texture2D" uid="uid://02yk5qp4rfvk" path="res://assets/graphics/puzzles/lights/spotwhite lines.png" id="2_wt7dl"]
+[ext_resource type="Texture2D" uid="uid://ckwxbfkvbp52q" path="res://assets/graphics/puzzles/lights/spotwhite.png" id="3_411fy"]
+[ext_resource type="Texture2D" uid="uid://bxovnuivn6r6i" path="res://assets/graphics/puzzles/lights/manette.png" id="5_a113e"]
+
+[sub_resource type="Curve2D" id="Curve2D_411fy"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 40, -57.638, 0, 0, 0, 0, 40, 850)
+}
+point_count = 2
+
+[node name="LightTruss" type="Node2D" unique_id=490220565]
+script = ExtResource("1_411fy")
+initial_rotation = null
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1468583312]
+texture = ExtResource("1_4s610")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1957403318]
+position = Vector2(-14, -388.99997)
+curve = SubResource("Curve2D_411fy")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1264691093]
+unique_name_in_owner = true
+position = Vector2(40, -57.638)
+rotation = 1.5707964
+rotates = false
+loop = false
+
+[node name="Spotlight" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=79456921]
+unique_name_in_owner = true
+rotation = -2.9046526
+texture = ExtResource("2_wt7dl")
+
+[node name="LightSource" type="PointLight2D" parent="Path2D/PathFollow2D/Spotlight" unique_id=1360322916]
+unique_name_in_owner = true
+position = Vector2(-13, 781)
+rotation = 1.5707964
+color = Color(1, 0, 0, 1)
+energy = 3.0
+texture = ExtResource("3_411fy")
+
+[node name="SweepingArea" type="Area2D" parent="Path2D/PathFollow2D/Spotlight" unique_id=32441178]
+unique_name_in_owner = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Path2D/PathFollow2D/Spotlight/SweepingArea" unique_id=1055237594]
+polygon = PackedVector2Array(-0.72802734, -39.180542, -26.593597, -36.950745, -46.27199, -24.390442, -52.247437, -14.325958, -332.8461, 1742.8218, 404.02548, 1739.7712, 52.3033, -12.861755, 32.493225, -31.876526)
+
+[node name="Manette" type="Sprite2D" parent="." unique_id=462949938]
+position = Vector2(-41, 350)
+texture = ExtResource("5_a113e")
+
+[node name="RotateLeftButton" type="Button" parent="Manette" unique_id=1821731153]
+unique_name_in_owner = true
+offset_left = -18.0
+offset_top = -62.0
+offset_right = 18.0
+offset_bottom = -23.0
+flat = true
+
+[node name="RotateRightButton" type="Button" parent="Manette" unique_id=1025449770]
+unique_name_in_owner = true
+offset_left = -18.0
+offset_top = -19.0
+offset_right = 18.0
+offset_bottom = 20.0
+flat = true
+
+[node name="MoveUpButton" type="Button" parent="Manette" unique_id=1541149793]
+unique_name_in_owner = true
+offset_left = -15.0
+offset_top = 22.0
+offset_right = 15.0
+offset_bottom = 54.0
+flat = true
+
+[node name="MoveDownButton" type="Button" parent="Manette" unique_id=214578334]
+unique_name_in_owner = true
+offset_left = -14.0
+offset_top = 60.0
+offset_right = 14.0
+offset_bottom = 92.0
+flat = true
+
+[node name="ColorButton" type="Button" parent="Manette" unique_id=68587668]
+unique_name_in_owner = true
+offset_left = -14.0
+offset_top = 99.0
+offset_right = 14.0
+offset_bottom = 128.0
+flat = true
+
+[node name="OnOffButton" type="Button" parent="Manette" unique_id=1042091827]
+unique_name_in_owner = true
+offset_left = -17.0
+offset_top = 130.0
+offset_right = 14.0
+offset_bottom = 163.0
+toggle_mode = true
+button_pressed = true
+flat = true
+
+[connection signal="button_down" from="Manette/RotateLeftButton" to="." method="_on_rotate_left_button_button_down"]
+[connection signal="button_down" from="Manette/RotateRightButton" to="." method="_on_rotate_right_button_button_down"]
+[connection signal="button_down" from="Manette/MoveUpButton" to="." method="_on_move_up_button_button_down"]
+[connection signal="button_down" from="Manette/MoveDownButton" to="." method="_on_move_down_button_button_down"]
+[connection signal="pressed" from="Manette/ColorButton" to="." method="_on_color_button_pressed"]
+[connection signal="toggled" from="Manette/OnOffButton" to="." method="_on_on_off_button_toggled"]

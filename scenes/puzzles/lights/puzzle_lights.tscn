@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bn6rvfmoomtsp"]
+
+[ext_resource type="Script" uid="uid://y0jrtks10ymw" path="res://scenes/puzzles/lights/puzzle_lights.gd" id="1_ef5m3"]
+[ext_resource type="Texture2D" uid="uid://d0xyswnokf0fx" path="res://assets/graphics/puzzles/lights/fred_background.png" id="1_xkayv"]
+[ext_resource type="PackedScene" uid="uid://b0r63iqagabq1" path="res://scenes/puzzles/lights/light_truss.tscn" id="2_8pqjt"]
+
+[node name="PuzzleLights" type="Control" unique_id=920936640]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ef5m3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=64168382]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=618242654]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xkayv")
+
+[node name="LightTruss" parent="." unique_id=490220565 instance=ExtResource("2_8pqjt")]
+position = Vector2(264, 541)
+color_idx = 1
+initial_rotation = 214
+
+[node name="LightTruss2" parent="." unique_id=2132624461 instance=ExtResource("2_8pqjt")]
+position = Vector2(692, 541)
+initial_rotation = 226
+
+[node name="LightTruss3" parent="." unique_id=923394160 instance=ExtResource("2_8pqjt")]
+position = Vector2(1724, 541)
+color_idx = 2
+initial_rotation = -434

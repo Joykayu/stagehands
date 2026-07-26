@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b2npynh6iql8r"]
+
+[ext_resource type="PackedScene" uid="uid://utg1f2c7lp7p" path="res://scenes/puzzles/lights/light_target.tscn" id="1_ivs7o"]
+
+[node name="Layout3" type="Control" unique_id=1049798757]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LightTarget" parent="." unique_id=2066268140 instance=ExtResource("1_ivs7o")]
+position = Vector2(952, 942)
+target_color = "Yellow"
+
+[node name="LightTarget2" parent="." unique_id=412691021 instance=ExtResource("1_ivs7o")]
+position = Vector2(477, 945)
+
+[node name="LightTarget3" parent="." unique_id=1941796470 instance=ExtResource("1_ivs7o")]
+position = Vector2(1484, 864)
+target_color = "Yellow"
+
+[node name="LightTarget4" parent="." unique_id=6369695 instance=ExtResource("1_ivs7o")]
+position = Vector2(1226, 943)
