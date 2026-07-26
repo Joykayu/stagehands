@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dnqa7q0uwknct" path="res://assets/graphics/paper.jpg" id="4_s6jwc"]
 [ext_resource type="Texture2D" uid="uid://b2bj4jef17ojp" path="res://assets/graphics/dialog_box.png" id="5_skqg8"]
 [ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="6_skqg8"]
-[ext_resource type="Shader" uid="uid://drop_shader" path="res://assets/graphics/drop_shadow.gdshader" id="7_u8th"]
+[ext_resource type="Shader" uid="uid://bxrfukvufbb5v" path="res://assets/graphics/drop_shadow.gdshader" id="7_u8th"]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource("7_u8th")

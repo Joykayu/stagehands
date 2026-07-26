@@ -50,7 +50,7 @@ func _ready():
 	$Menu/TextureRect/PlayButton.connect("pressed",on_play_button_pressed)
 
 func on_play_button_pressed():
-  $AudioManager.exit_menu()
+	$AudioManager.exit_menu()
 	$Menu/TextureRect/PlayButton.disabled = true
 	next_transition("dialogue")
 
