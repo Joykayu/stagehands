@@ -37,7 +37,8 @@ var transitions_list = [
 	"puzzle3",
 	"puzzle3",
 	"outro",
-	"epilogue"
+	"epilogue",
+	"credits"
 ]
 
 
@@ -64,8 +65,9 @@ func next_transition(type):
 	
 	match type:
 		"dialogue" :
-			$DialogSystem.get_dialogue(dialogue_path + dialogue_list[curr_dialogue_idx])
-			curr_dialogue_idx +=1
+			if curr_dialogue_idx < dialogue_list.size():
+				$DialogSystem.get_dialogue(dialogue_path + dialogue_list[curr_dialogue_idx])
+				curr_dialogue_idx +=1
 		"puzzle_in" :
 			state = "puzzle"
 			$PuzzleSystem.load_puzzle(transitions_list[curr_transition_idx])
@@ -91,12 +93,16 @@ func spawn_transition():
 	instance.begin_transition(transitions_list[curr_transition_idx])
 
 func on_transition_finished():
+	var last_transition = transitions_list[curr_transition_idx - 1] if curr_transition_idx > 0 else ""
+	if last_transition == "credits":
+		$AudioManager.enter_menu()
+		get_tree().reload_current_scene()
+		return
 	match state:
 		"dialogue":
 			$DialogSystem.enable_audio_playback()
 			$DialogSystem.is_active = true
 		"puzzle":
-			#puzzle is active
 			pass
 
 func set_mouse_filter_recursive(node: Node, filter: Control.MouseFilter) -> void:

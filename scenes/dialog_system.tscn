@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://dnqa7q0uwknct" path="res://assets/graphics/paper.jpg" id="4_s6jwc"]
 [ext_resource type="Texture2D" uid="uid://b2bj4jef17ojp" path="res://assets/graphics/dialog_box.png" id="5_skqg8"]
 [ext_resource type="Theme" uid="uid://c5mexhp1eo04u" path="res://assets/graphics/main_theme.tres" id="6_skqg8"]
+[ext_resource type="Shader" uid="uid://drop_shader" path="res://assets/graphics/drop_shadow.gdshader" id="7_u8th"]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource("7_u8th")
 
 [node name="DialogSystem" type="Node" unique_id=226354550]
 script = ExtResource("1_o7dfd")
@@ -48,11 +52,25 @@ position = Vector2(222, 17)
 texture = ExtResource("3_3urqn")
 offset = Vector2(6, -229.595)
 
+[node name="Shadow" type="Sprite2D" parent="DialogControl/CharaLeftSprite" unique_id=3000000001]
+material = SubResource(1)
+show_behind_parent = true
+texture_filter = 1
+position = Vector2(9, 9)
+offset = Vector2(6, -229.595)
+
 [node name="CharaRightSprite" type="Sprite2D" parent="DialogControl" unique_id=1761276014]
 texture_filter = 1
 position = Vector2(1682.9366, 30.78302)
 scale = Vector2(-1, 1)
 texture = ExtResource("3_3urqn")
+offset = Vector2(-0.06335449, -243.37802)
+
+[node name="Shadow" type="Sprite2D" parent="DialogControl/CharaRightSprite" unique_id=3000000002]
+material = SubResource(1)
+show_behind_parent = true
+texture_filter = 1
+position = Vector2(-9, 9)
 offset = Vector2(-0.06335449, -243.37802)
 
 [node name="DialogBg" type="TextureRect" parent="DialogControl" unique_id=1954244522]
